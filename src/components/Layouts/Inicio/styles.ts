@@ -26,4 +26,9 @@ export const Container = styled.div`
       width: 14rem;
     }
   }
+
+  img {
+    width: 500px;
+    height: 400px;
+  }
 `;

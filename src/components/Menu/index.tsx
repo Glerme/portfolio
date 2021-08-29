@@ -13,7 +13,7 @@ export const Menu: React.FC = () => {
         menuItems={[
           {
             label: 'Sobre Mim',
-            url: '#',
+            url: '#sobre',
           },
           {
             label: 'Habilidades',

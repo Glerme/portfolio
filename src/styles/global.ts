@@ -42,7 +42,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html, body, div#__next {
-    font-family: 'Titillium Web', sans-serif;
     scroll-behavior: smooth;
   }
 
@@ -62,6 +61,7 @@ const GlobalStyles = createGlobalStyle`
   h5,
   h6 {
     font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
   }
 
   button {
@@ -81,6 +81,12 @@ const GlobalStyles = createGlobalStyle`
     &:visited{
     color: inherit;
     }
+  }
+
+  p, a, button{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
   }
  
 `;
