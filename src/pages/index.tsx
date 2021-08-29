@@ -1,10 +1,15 @@
 import { NextPage } from 'next';
 
+import { Menu } from '../components/Menu';
+import { Inicio } from '../components/Layouts/Inicio';
+import { PageContainer } from '../components/Containers/PageContainer';
+
 const Home: NextPage = () => {
   return (
-    <div>
-      <h1 style={{ color: 'white' }}>Hello World</h1>
-    </div>
+    <PageContainer>
+      <Menu />
+      <Inicio />
+    </PageContainer>
   );
 };
 

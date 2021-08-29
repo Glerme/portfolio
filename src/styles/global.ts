@@ -1,6 +1,29 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+
+  :root{
+    --white: #ffffff;
+
+    --gray-100: #F3F3F3;
+
+    --background-primary: #000000;
+    --background-secondary: #111111;
+
+    --container: #0B0A0A;
+
+    --black-800: #1F1F1F;
+    --black-800: #494949;
+
+    --green: #4EBA64;
+    --green-light:#64EDAA;
+
+    --red: #E3514D;
+    --red-light: #FF726F;
+
+  }
+
+
  * {
     margin: 0;
     padding: 0;
@@ -19,15 +42,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html, body, div#__next {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
+    scroll-behavior: smooth;
   }
 
   body {
-    background: #333;
+    background-color: var(--background-primary);
+    color: var(--white);
   }
 
   body, input, textarea, button {
@@ -47,8 +68,15 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
   }
 
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
   a{
     text-decoration: none;
+    cursor: pointer;
+
     
     &:visited{
     color: inherit;
