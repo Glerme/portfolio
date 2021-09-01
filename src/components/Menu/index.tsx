@@ -17,15 +17,15 @@ export const Menu: React.FC = () => {
           },
           {
             label: 'Habilidades',
-            url: '#',
+            url: '#habilidades',
           },
           {
             label: 'Projetos',
-            url: '#',
+            url: '#projetos',
           },
           {
             label: 'Contato',
-            url: '#',
+            url: '#contato',
           },
         ]}
       />

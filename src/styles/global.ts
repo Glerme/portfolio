@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
 
     --container: #0B0A0A;
 
-    --black-800: #1F1F1F;
+    --black-500: #1F1F1F;
     --black-800: #494949;
 
     --green: #4EBA64;
