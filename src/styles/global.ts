@@ -43,6 +43,7 @@ const GlobalStyles = createGlobalStyle`
 
   html, body, div#__next {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
   }
 
   body {
