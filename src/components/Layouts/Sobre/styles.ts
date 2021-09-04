@@ -5,12 +5,10 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.section`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-  margin-top: 1rem;
+  margin-top: 2rem;
 
   width: 100%;
   height: 100%;
@@ -50,16 +48,15 @@ export const Contato = styled.div`
     margin-top: 1rem;
 
     a {
+      color: var(--white);
       margin: 0 0.3rem;
 
       &:active {
         transform: translate(2px, 3px);
       }
 
-      svg {
-        &:hover {
-          stroke: var(--green);
-        }
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }

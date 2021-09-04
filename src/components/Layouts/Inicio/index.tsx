@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import { PageContainer } from '../../Containers/PageContainer';
-import Button from '../../Forms/Button';
+
 import { Menu } from '../../Menu';
+import { Button } from '../../Forms/Button';
+import { PageContainer } from '../../Containers/PageContainer';
 
 import { Container } from './styles';
 
@@ -9,6 +10,7 @@ export const Inicio: React.FC = () => {
   return (
     <>
       <Menu />
+
       <PageContainer>
         <Container>
           <section>
@@ -25,7 +27,7 @@ export const Inicio: React.FC = () => {
             </div>
           </section>
 
-          <Image src={'/meninoComputador.svg'} width={500} height={400} />
+          <Image src={'/meninoComputador.svg'} width={100} height={100} />
         </Container>
       </PageContainer>
     </>

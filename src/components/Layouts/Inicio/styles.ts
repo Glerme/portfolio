@@ -5,9 +5,7 @@ export const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
 
-  height: 100%;
 
-  margin-top: 1rem;
 
   section {
     display: flex;
@@ -29,8 +27,4 @@ export const Container = styled.div`
     }
   }
 
-  img {
-    width: 500px;
-    height: 400px;
-  }
 `;
