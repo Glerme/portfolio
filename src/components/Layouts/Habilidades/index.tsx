@@ -1,9 +1,8 @@
-import React from 'react';
-import { CardLinguagens } from '../../Cards/CardLinguagens';
-import { PageContainer } from '../../Containers/PageContainer';
+import { CardContainer } from '../../Containers/CardContainer';
 import { Title } from '../../Utilitarios/Title';
+import { PageContainer } from '../../Containers/PageContainer';
 
-import { Container, Content } from './styles';
+import { Container } from './styles';
 
 export const Habilidades: React.FC = () => {
   return (
@@ -12,10 +11,7 @@ export const Habilidades: React.FC = () => {
         <Title label="Habilidades" />
 
         <Container>
-          <Content>
-            <CardLinguagens />
-          </Content>
-          <aside>aside</aside>
+          <CardContainer />
         </Container>
       </PageContainer>
     </div>

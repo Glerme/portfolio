@@ -2,11 +2,19 @@ import Image from 'next/image';
 
 import { Container } from './styles';
 
-export const CardLinguagens: React.FC = () => {
+interface CardLinguagensProps {
+  title: string;
+  url: string;
+}
+
+export const CardLinguagens: React.FC<CardLinguagensProps> = ({
+  url,
+  title,
+}) => {
   return (
     <Container>
-      <Image src={'/html.svg'} width={120} height={120} />
-      <p>HTML</p>
+      <Image src={url} width={120} height={120} />
+      <p>{title}</p>
     </Container>
   );
 };
