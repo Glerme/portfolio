@@ -14,8 +14,6 @@ interface ContainerLinguagensProps {
 export const ContainerLinguagens: React.FC<ContainerLinguagensProps> = ({
   data,
 }) => {
-  console.log(data);
-
   return (
     <Container>
       {data.map(c => (

@@ -12,28 +12,13 @@ export const Container = styled.div`
 
   padding: 1rem;
 
-  transition: border 1s;
-
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow;
-  transition-property: box-shadow;
+  transition: all 0.5s ease-in-out;
 
   p {
-    font-weight: 500;
+    font-weight: 600;
   }
 
   &:hover {
-    /* border: 1px solid var(--green);
-
-    */
-
-    transition: 1s ease-in-out;
-    background: #4f95da;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background-color: #296335;
   }
 `;

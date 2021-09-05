@@ -38,24 +38,21 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ components }) => {
 
   return (
     <Container>
-      <div>
-        {components.map(
-          ({ component: Component, props }, index) =>
-            index === currentIndex && <Component key={index} {...props} />,
-        )}
-      </div>
+      {components.map(
+        ({ component: Component, props }, index) =>
+          index === currentIndex && <Component key={index} {...props} />,
+      )}
 
       <Pager>
         {components.map((_, index) => (
           <button
             key={index}
+            className={index === currentIndex ? 'active' : ''}
             onClick={() => {
               clearInterval(intervalo);
               setCurrentIndex(index);
             }}
-          >
-            button
-          </button>
+          />
         ))}
       </Pager>
     </Container>

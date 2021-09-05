@@ -7,6 +7,8 @@ export const Container = styled.div`
 
   position: relative;
 
+  height: 450px;
+
   main {
     padding: 2rem 5rem;
 

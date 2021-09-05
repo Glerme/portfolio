@@ -21,31 +21,31 @@ const Home: NextPage = () => {
     console.log(number);
   };
 
-  const getPagesNumbers = () => {
-    const pageNumbers = [];
+  // const getPagesNumbers = () => {
+  //   const pageNumbers = [];
 
-    for (let i = 1; i <= 5; i++) {
-      pageNumbers.push(<button key={i}>{i}</button>);
-    }
+  //   for (let i = 1; i <= 5; i++) {
+  //     pageNumbers.push(<button key={i}>{i}</button>);
+  //   }
 
-    return [...pageNumbers];
-  };
-
-  const pagesNumbers = getPagesNumbers();
+  //   return [...pageNumbers];
+  // };
 
   return (
-    <ReactPageScroller
-      animationTimerBuffer={0}
-      blockScrollDown={false}
-      blockScrollUp={false}
-      pageOnChange={handlePageChange}
-      onBeforePageScroll={handleBeforePageChange}
-      customPageNumber={currentPage}
-    >
-      <Inicio />
-      <Sobre />
-      <Habilidades />
-    </ReactPageScroller>
+    <>
+      <ReactPageScroller
+        animationTimerBuffer={0}
+        blockScrollDown={false}
+        blockScrollUp={false}
+        pageOnChange={handlePageChange}
+        onBeforePageScroll={handleBeforePageChange}
+        customPageNumber={currentPage}
+      >
+        <Inicio />
+        <Sobre />
+        <Habilidades />
+      </ReactPageScroller>
+    </>
   );
 };
 
