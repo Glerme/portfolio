@@ -34,8 +34,6 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ components }) => {
     }
   }, 10000);
 
-  console.log('components', components);
-
   return (
     <Container>
       {components.map(

@@ -17,10 +17,6 @@ const Home: NextPage = () => {
     [currentPage],
   );
 
-  const handleBeforePageChange = number => {
-    console.log(number);
-  };
-
   // const getPagesNumbers = () => {
   //   const pageNumbers = [];
 
@@ -38,7 +34,6 @@ const Home: NextPage = () => {
         blockScrollDown={false}
         blockScrollUp={false}
         pageOnChange={handlePageChange}
-        onBeforePageScroll={handleBeforePageChange}
         customPageNumber={currentPage}
       >
         <Inicio />
