@@ -12,8 +12,8 @@ export const CardLinguagens: React.FC<CardLinguagensProps> = ({
   title,
 }) => {
   return (
-    <Container>
-      <Image src={url} width={120} height={120} />
+    <Container title={title}>
+      <Image src={url} width={100} height={100} alt={title} />
       <p>{title}</p>
     </Container>
   );

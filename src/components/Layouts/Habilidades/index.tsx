@@ -7,9 +7,8 @@ import { Container } from './styles';
 export const Habilidades: React.FC = () => {
   return (
     <div id="habilidades">
+      <Title label="Habilidades" />
       <PageContainer>
-        <Title label="Habilidades" />
-
         <Container>
           <CardContainer />
         </Container>

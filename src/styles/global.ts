@@ -44,11 +44,12 @@ const GlobalStyles = createGlobalStyle`
   html, body, div#__next {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+    overflow: hidden;
   }
 
   body {
     background-color: var(--background-primary);
-    color: var(--white);
+    color: var(--white); 
   }
 
   body, input, textarea, button {
@@ -77,10 +78,11 @@ const GlobalStyles = createGlobalStyle`
   a{
     text-decoration: none;
     cursor: pointer;
+    color: var(--white);
 
     
     &:visited{
-    color: inherit;
+      color: var(--white);
     }
   }
 

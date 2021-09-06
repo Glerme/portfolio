@@ -6,6 +6,7 @@ import ReactPageScroller from 'react-page-scroller';
 import { Sobre } from '../components/Layouts/Sobre';
 import { Inicio } from '../components/Layouts/Inicio';
 import { Habilidades } from '../components/Layouts/Habilidades';
+import { Menu } from '../components/Header';
 
 const Home: NextPage = () => {
   const [currentPage, setCurrentPage] = useState(null);
@@ -33,6 +34,8 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <Menu />
+
       <ReactPageScroller
         animationTimerBuffer={0}
         blockScrollDown={false}

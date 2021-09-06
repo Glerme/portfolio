@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: var(--background-secondary);
+  background-color: var(--background-secondary); ;
 `;
 
 export const Content = styled.section`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   width: 100%;
   height: 100%;
