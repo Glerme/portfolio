@@ -96,7 +96,6 @@ const GlobalStyles = createGlobalStyle`
   .card__collection {
     position: relative;
     display: block;
-    background: rgba(10, 10, 10, 0.5);
     padding: 10px;
     overflow: hidden;
 
@@ -243,12 +242,8 @@ const GlobalStyles = createGlobalStyle`
           }
         }
       }
-
     }
-
   }
-
-
 
 `;
 

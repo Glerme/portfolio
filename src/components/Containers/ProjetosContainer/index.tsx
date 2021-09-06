@@ -1,12 +1,14 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import { useCallback } from 'react';
+import { useRouter } from 'next/router';
 
-import { Container } from './styles';
+import { Content, Container } from './styles';
 
 interface CardProps {
   title: string;
   image: string;
   url: string;
+  description: string;
 }
 
 interface ProjetosContainerProps {
@@ -16,14 +18,25 @@ interface ProjetosContainerProps {
 export const ProjetosContainer: React.FC<ProjetosContainerProps> = ({
   data,
 }) => {
+  console.log();
+
   return (
-    <Container
-      target="_blank"
-      href="https://twitter.com/"
-      rel="noopener noreferrer"
-      title={'teste'}
-    >
-      <img src={'/telaInicial.png'} width={100} height={100} alt={'teste'} />
+    <Container>
+      {data.map((d, index) => (
+        <Content
+          key={index}
+          href={d.url}
+          title={d.title}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={d.image} alt={d.title} />
+          <div>
+            <h1>{d.title}</h1>
+            <p>{d.description}</p>
+          </div>
+        </Content>
+      ))}
     </Container>
   );
 };

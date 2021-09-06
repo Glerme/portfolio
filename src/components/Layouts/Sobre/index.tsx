@@ -1,6 +1,3 @@
-import { FiGithub } from 'react-icons/fi';
-import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
-
 import { Title } from '../../Utilitarios/Title';
 import { CardImages } from '../../Cards/CardImages';
 import { PageContainer } from '../../Containers/PageContainer';
