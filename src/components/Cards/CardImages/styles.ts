@@ -7,14 +7,11 @@ export const Container = styled.div`
 
   border-radius: 10px;
 
-  width: 285px;
-  height: 380px;
-
   position: relative;
 
   img {
     border-radius: 10px;
-    z-index: 1;
+    z-index: 15;
   }
 `;
 
@@ -23,16 +20,16 @@ export const Linhas = styled.div`
   justify-content: center;
   align-items: center;
 
-  border-radius: 10px;
+  border-radius: 15px;
   border: 5px solid var(--green);
 
-  width: 285px;
-  height: 380px;
+  width: 300px;
+  height: 410px;
 
   position: absolute;
 
-  top: 12px;
-  left: 12px;
+  top: 20px;
+  left: 30px;
 
   z-index: 0;
 `;

@@ -1,12 +1,48 @@
-import Image from 'next/image';
-
+import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import { FiGithub } from 'react-icons/fi';
 import { Container, Linhas } from './styles';
 
 export const CardImages: React.FC = () => {
   return (
-    <Container>
-      <Image src="/foto.png" alt="" width={285} height={380} />
-      <Linhas />
-    </Container>
+    <>
+      <Container className="card__collection clear-fix">
+        <Linhas />
+        <div className="cards cards--two">
+          <img src="/foto.png" className="img-responsive" alt="Cards Image" />
+          <span className="cards--two__rect"></span>
+          <span className="cards--two__tri"></span>
+          <p>Guilherme Felipe</p>
+          <ul className="cards__list">
+            <li>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/Glerme"
+              >
+                <FiGithub size={20} />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/glerme/"
+              >
+                <FaLinkedinIn size={20} />
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://api.whatsapp.com/send?phone=5514998363749"
+              >
+                <FaWhatsapp size={20} />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </Container>
+    </>
   );
 };
