@@ -86,7 +86,7 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  p, a, button{
+  p, a, button, label, input, textarea{
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;

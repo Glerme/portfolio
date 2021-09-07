@@ -3,6 +3,7 @@ import ReactPageScroller from 'react-page-scroller';
 
 import { Sobre } from '../Layouts/Sobre';
 import { Inicio } from '../Layouts/Inicio';
+import { Contato } from '../Layouts/Contato';
 import { Projetos } from '../Layouts/Projetos';
 import { Habilidades } from '../Layouts/Habilidades';
 
@@ -44,6 +45,7 @@ export const Template: React.FC = () => {
         <Sobre />
         <Habilidades />
         <Projetos />
+        <Contato />
       </ReactPageScroller>
     </>
   );

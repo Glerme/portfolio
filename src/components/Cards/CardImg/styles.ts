@@ -21,13 +21,13 @@ export const Linhas = styled.div`
   border-radius: 15px;
   border: 5px solid var(--green);
 
-  width: 300px;
+  width: 310px;
   height: 410px;
 
   position: absolute;
 
   top: 20px;
-  left: 125px;
+  left: 20px;
 
   z-index: 0;
 `;

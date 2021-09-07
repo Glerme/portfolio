@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 
 import { Container } from './styles';
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
   onButtonClick: () => void;
 }
 
-export const Button: React.FC<ButtonProps> = ({ label, onButtonClick }) => {
-  return <Container onClick={onButtonClick}>{label}</Container>;
+export const Button: React.FC<ButtonProps> = ({
+  label,
+  onButtonClick,
+  ...rest
+}) => {
+  return (
+    <Container onClick={onButtonClick} {...rest}>
+      {label}
+    </Container>
+  );
 };

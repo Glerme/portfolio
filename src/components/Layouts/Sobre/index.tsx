@@ -1,5 +1,5 @@
 import { Title } from '../../Utilitarios/Title';
-import { CardImages } from '../../Cards/CardImages';
+import { CardImg } from '../../Cards/CardImg';
 import { PageContainer } from '../../Containers/PageContainer';
 
 import { Container, Contato, Content, TextContainer } from './styles';
@@ -12,7 +12,7 @@ export const Sobre: React.FC = () => {
 
         <Content>
           <div>
-            <CardImages />
+            <CardImg />
           </div>
 
           <TextContainer>

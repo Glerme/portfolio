@@ -2,7 +2,7 @@ import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 import { Container, Linhas } from './styles';
 
-export const CardImages: React.FC = () => {
+export const CardImg: React.FC = () => {
   return (
     <>
       <Container className="card__collection clear-fix">
