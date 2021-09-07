@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+import facepaint from 'facepaint';
+
+import { breakpoints } from '../../../styles/global';
+
+const mq = facepaint(breakpoints);
+
 export const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -12,7 +18,10 @@ export const Container = styled.div`
   margin-bottom: 1rem;
 
   p {
-    font-size: 5.5rem;
+    ${mq({
+      'font-size': ['4rem', '4rem', '5.5rem'],
+    })}
+
     font-weight: 600;
 
     margin-top: 1rem;
@@ -23,10 +32,12 @@ export const Container = styled.div`
   }
 
   h1 {
-    font-size: 3.125rem;
-
     margin-top: 1rem;
 
     color: var(--green);
+
+    ${mq({
+      'font-size': ['2rem', '2rem', '3.125rem'],
+    })}
   }
 `;

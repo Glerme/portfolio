@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+import facepaint from 'facepaint';
+
+import { breakpoints } from '../../../styles/global';
+
+const mq = facepaint(breakpoints);
+
 export const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -21,13 +27,15 @@ export const Linhas = styled.div`
   border-radius: 15px;
   border: 5px solid var(--green);
 
-  width: 310px;
-  height: 410px;
+  width: 300px;
+  height: 390px;
 
   position: absolute;
 
-  top: 20px;
-  left: 20px;
+  ${mq({
+    top: ['40px', '40px', '30px'],
+    right: ['0px', '0px', '110px'],
+  })}
 
   z-index: 0;
 `;

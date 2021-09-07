@@ -42,7 +42,8 @@ export const Template: React.FC = () => {
         customPageNumber={currentPage}
       > */}
       <Inicio />
-      {/* <Sobre />
+      <Sobre />
+      {/* 
       <Habilidades />
       <Projetos />
       <Contato /> */}
