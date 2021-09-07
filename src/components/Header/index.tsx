@@ -7,7 +7,7 @@ import { Container } from './styles';
 export const Menu: React.FC = () => {
   return (
     <Container>
-      <Image src={'/logo.svg'} width={100} height={100} />
+      <img src={'/logo.svg'} alt="Logo" title="Logo" />
 
       <MenuItem
         menuItems={[

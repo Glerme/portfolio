@@ -18,8 +18,6 @@ interface ProjetosContainerProps {
 export const ProjetosContainer: React.FC<ProjetosContainerProps> = ({
   data,
 }) => {
-  console.log();
-
   return (
     <Container>
       {data.map((d, index) => (

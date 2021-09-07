@@ -6,7 +6,6 @@ import { Template } from '../components/Template';
 const Home: NextPage = () => {
   return (
     <>
-      <Menu />
       <Template />
     </>
   );

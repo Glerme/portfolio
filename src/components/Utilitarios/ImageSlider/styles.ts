@@ -17,7 +17,7 @@ export const Pager = styled.section`
 
   position: absolute;
 
-  right: -160px;
+  right: -110px;
 
   button {
     width: 8px;

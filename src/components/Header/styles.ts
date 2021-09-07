@@ -10,4 +10,8 @@ export const Container = styled.div`
   padding: 0 2rem;
 
   z-index: 50;
+
+  img {
+    width: 100px;
+  }
 `;

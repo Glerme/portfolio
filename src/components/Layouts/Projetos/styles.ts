@@ -10,6 +10,4 @@ export const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  max-width: 100%;
 `;

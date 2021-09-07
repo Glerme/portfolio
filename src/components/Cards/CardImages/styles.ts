@@ -7,11 +7,9 @@ export const Container = styled.div`
 
   border-radius: 10px;
 
-  position: relative;
-
   img {
+    position: relative;
     border-radius: 10px;
-    z-index: 15;
   }
 `;
 
@@ -29,7 +27,7 @@ export const Linhas = styled.div`
   position: absolute;
 
   top: 20px;
-  left: 30px;
+  left: 125px;
 
   z-index: 0;
 `;

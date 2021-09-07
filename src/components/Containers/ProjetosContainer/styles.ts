@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 `;
 
 export const Content = styled.a`
@@ -13,14 +13,13 @@ export const Content = styled.a`
   border-radius: 15px;
 
   margin: 1rem;
-  /* padding: 1rem; */
   position: relative;
 
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 10px rgba(black, 0.5);
 
-  width: 292px;
-  height: 250px;
+  width: 260px;
+  height: 200px;
 
   &:hover {
     transform: translateY(20px);

@@ -4,10 +4,12 @@ import { Button } from '../../Forms/Button';
 import { PageContainer } from '../../Containers/PageContainer';
 
 import { Container } from './styles';
+import { Menu } from '../../Header';
 
 export const Inicio: React.FC = () => {
   return (
     <>
+      <Menu />
       <PageContainer>
         <Container>
           <section>
