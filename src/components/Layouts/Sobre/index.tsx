@@ -1,5 +1,5 @@
-import { Title } from '../../Utilitarios/Title';
 import { CardImg } from '../../Cards/CardImg';
+import { Title } from '../../Utilitarios/Title';
 import { PageContainer } from '../../Containers/PageContainer';
 
 import { Container, Contato, Content, TextContainer } from './styles';

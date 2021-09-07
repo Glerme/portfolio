@@ -1,17 +1,29 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  background-color: var(--container);
-  border-radius: 10px;
-
-  padding: 1rem;
+  position: relative;
 
   width: 100%;
-  min-height: 450px;
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    background-color: var(--container);
+    border-radius: 10px;
+
+    padding: 1rem;
+
+    width: 100%;
+
+    position: relative;
+    z-index: 5;
+  }
 `;
 
 export const ContainerForm = styled.form`

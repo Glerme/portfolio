@@ -2,16 +2,27 @@ import { Container } from './styles';
 
 import { FiGithub } from 'react-icons/fi';
 
-// interface CardLinguagensProps {
-//   title: string;
-//   url: string;
-// }
+import { IconBaseProps } from 'react-icons/lib';
 
-export const CardRedesSociais: React.FC = () => {
+interface CardProps {
+  title: string;
+  icon: React.ComponentType<IconBaseProps>;
+  url: string;
+}
+
+interface CardRedesSociaisProps {
+  card: CardProps[];
+}
+
+export const CardRedesSociais: React.FC<CardRedesSociaisProps> = ({ card }) => {
   return (
-    <Container title={'teste'}>
-      <FiGithub size={48} />
-      <p>Github</p>
-    </Container>
+    <>
+      {card.map((c, index) => (
+        <Container title={c.title} key={index}>
+          <c.icon size={48} />
+          <p>{c.title}</p>
+        </Container>
+      ))}
+    </>
   );
 };

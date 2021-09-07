@@ -1,9 +1,9 @@
 import { Title } from '../../Utilitarios/Title';
 import { ImageSlider } from '../../Utilitarios/ImageSlider';
 import { PageContainer } from '../../Containers/PageContainer';
+import { ProjetosContainer } from '../../Containers/ProjetosContainer';
 
 import { Content, Container } from './styles';
-import { ProjetosContainer } from '../../Containers/ProjetosContainer';
 
 export const Projetos: React.FC = () => {
   const options = [
