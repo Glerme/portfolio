@@ -14,6 +14,8 @@ export const Container = styled.div`
 
   transition: all 0.5s ease-in-out;
 
+  width: 10rem;
+
   p {
     font-weight: 600;
   }

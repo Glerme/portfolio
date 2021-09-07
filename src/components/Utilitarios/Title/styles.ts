@@ -9,7 +9,7 @@ export const Container = styled.div`
 
   width: 100%;
 
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 
   p {
     font-size: 5.5rem;

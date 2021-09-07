@@ -5,7 +5,7 @@ export const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
 
-
+  margin-top: 4rem;
 
   section {
     display: flex;
@@ -26,5 +26,4 @@ export const Container = styled.div`
       width: 14rem;
     }
   }
-
 `;

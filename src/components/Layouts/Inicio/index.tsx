@@ -1,6 +1,5 @@
 import Image from 'next/image';
 
-import { Menu } from '../../Menu';
 import { Button } from '../../Forms/Button';
 import { PageContainer } from '../../Containers/PageContainer';
 
@@ -9,8 +8,6 @@ import { Container } from './styles';
 export const Inicio: React.FC = () => {
   return (
     <>
-      <Menu />
-
       <PageContainer>
         <Container>
           <section>

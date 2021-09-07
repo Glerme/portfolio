@@ -1,6 +1,3 @@
-import { FiGithub } from 'react-icons/fi';
-import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
-
 import { Title } from '../../Utilitarios/Title';
 import { CardImages } from '../../Cards/CardImages';
 import { PageContainer } from '../../Containers/PageContainer';
@@ -53,30 +50,6 @@ export const Sobre: React.FC = () => {
                 <span>Contato</span>
                 <p>(14) 99836-3749</p>
               </div>
-
-              <footer>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/Glerme"
-                >
-                  <FiGithub size={30} />
-                </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.linkedin.com/in/glerme/"
-                >
-                  <FaLinkedinIn size={30} />
-                </a>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://api.whatsapp.com/send?phone=5514998363749"
-                >
-                  <FaWhatsapp size={30} />
-                </a>
-              </footer>
             </Contato>
           </TextContainer>
         </Content>

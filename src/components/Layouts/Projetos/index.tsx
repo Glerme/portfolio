@@ -1,23 +1,113 @@
-import React from 'react';
-import { CardLinguagens } from '../../Cards/CardLinguagens';
-import { PageContainer } from '../../Containers/PageContainer';
 import { Title } from '../../Utilitarios/Title';
+import { ImageSlider } from '../../Utilitarios/ImageSlider';
+import { PageContainer } from '../../Containers/PageContainer';
 
-import { Container, Content } from './styles';
+import { Content, Container } from './styles';
+import { ProjetosContainer } from '../../Containers/ProjetosContainer';
 
-export const Habilidades: React.FC = () => {
+export const Projetos: React.FC = () => {
+  const options = [
+    {
+      title: 'HTML',
+      image: '/telaInicial.png',
+      url: 'https://www.google.com.br',
+      description: 'lorem ipsum dolor',
+    },
+    {
+      title: 'CSS',
+      image: '/telaInicial.png',
+      url: 'www.google.com.br',
+      description: 'lorem ipsum dolor',
+    },
+    {
+      title: 'CSS',
+      image: '/telaInicial.png',
+      url: 'www.google.com.br',
+      description: 'lorem ipsum dolor',
+    },
+    {
+      title: 'CSS',
+      image: '/telaInicial.png',
+      url: 'www.google.com.br',
+      description: 'lorem ipsum dolor',
+    },
+    {
+      title: 'CSS',
+      image: '/telaInicial.png',
+      url: 'www.google.com.br',
+      description: 'lorem ipsum dolor',
+    },
+    {
+      title: 'CSS',
+      image: '/telaInicial.png',
+      url: 'www.google.com.br',
+      description: 'lorem ipsum dolor',
+    },
+  ];
+
+  const options2 = [
+    {
+      title: 'HTML',
+      image: '/telaInicial.png',
+      url: 'www.google.com.br',
+      description: 'lorem ipsum dolor',
+    },
+    {
+      title: 'CSS',
+      image: '/telaInicial.png',
+      url: 'www.google.com.br',
+      description: 'lorem ipsum dolor',
+    },
+    {
+      title: 'CSS',
+      image: '/telaInicial.png',
+      url: 'www.google.com.br',
+      description: 'lorem ipsum dolor',
+    },
+    {
+      title: 'CSS',
+      image: '/telaInicial.png',
+      url: 'www.google.com.br',
+      description: 'lorem ipsum dolor',
+    },
+    {
+      title: 'CSS',
+      image: '/telaInicial.png',
+      url: 'www.google.com.br',
+      description: 'lorem ipsum dolor',
+    },
+    {
+      title: 'CSS',
+      image: '/telaInicial.png',
+      url: 'www.google.com.br',
+      description: 'lorem ipsum dolor',
+    },
+  ];
+
   return (
-    <div id="projetos">
+    <Container id="projetos">
       <PageContainer>
         <Title label="Projetos" />
 
-        <Container>
-          <Content>
-            <CardLinguagens />
-          </Content>
-          <aside>aside</aside>
-        </Container>
+        <Content>
+          <ImageSlider
+            components={[
+              {
+                component: ProjetosContainer,
+                props: {
+                  data: options,
+                },
+              },
+              {
+                component: ProjetosContainer,
+                props: {
+                  data: options2,
+                },
+              },
+            ]}
+          />
+        </Content>
       </PageContainer>
-    </div>
+    </Container>
   );
 };
