@@ -7,27 +7,30 @@ import { breakpoints } from '../../../styles/global';
 const mq = facepaint(breakpoints);
 
 export const Container = styled.div`
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 `;
 
 export const Content = styled.section`
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  width: 100%;
-
-  height: 100%;
+  gap: 2rem;
 
   ${mq({
-    display: ['flex', 'flex', 'grid'],
-    'flex-direction': ['column', 'column'],
-    'align-items': ['center', 'center'],
-    'justify-content': ['center', 'center'],
+    display: ['grid', 'grid', 'flex'],
+    'flex-direction': ['column', 'column', 'row'],
+    'place-items': ['center'],
+    padding: ['2rem', '2rem', '0'],
   })}
 `;
 
 export const TextContainer = styled.article`
   display: flex;
   flex-direction: column;
+
+  max-width: 600px;
 
   padding: 1rem 0;
 

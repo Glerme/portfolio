@@ -11,12 +11,7 @@ export const Inicio: React.FC = () => {
           <span>.</span>
         </h1>
 
-        <div>
-          <Button
-            label={'Contato'}
-            onButtonClick={() => console.log('click')}
-          />
-        </div>
+        <Button label={'Contato'} onButtonClick={() => console.log('click')} />
       </section>
       <img src={'/meninoComputador.svg'} />
     </Container>

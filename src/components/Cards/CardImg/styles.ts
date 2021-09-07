@@ -33,8 +33,8 @@ export const Linhas = styled.div`
   position: absolute;
 
   ${mq({
-    top: ['40px', '40px', '30px'],
-    right: ['0px', '0px', '110px'],
+    top: ['40px', '40px', '25px'],
+    right: ['0px', '0px', '20px'],
   })}
 
   z-index: 0;

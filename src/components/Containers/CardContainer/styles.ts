@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+import facepaint from 'facepaint';
+
+import { breakpoints } from '../../../styles/global';
+
+const mq = facepaint(breakpoints);
+
 export const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -7,6 +13,10 @@ export const Container = styled.div`
 
   position: relative;
   height: 450px;
+
+  ${mq({
+    height: ['100%', '100%', '450px'],
+  })}
 
   main {
     padding: 2rem 5rem;

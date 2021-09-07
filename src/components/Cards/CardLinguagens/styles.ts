@@ -1,4 +1,16 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const iconAnimation = keyframes`
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -6,21 +18,27 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  background-color: var(--black-500);
-  border-radius: 10px;
   border: 0;
+  border-radius: 10px;
+  background-color: var(--black-500);
 
-  padding: 1rem;
+  width: 100%;
 
   transition: all 0.5s ease-in-out;
 
-  width: 10rem;
-
   p {
     font-weight: 600;
+    width: 100%;
+
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    height: 150px;
   }
 
   &:hover {
-    background-color: #296335;
+    animation: ${iconAnimation} 1s infinite;
   }
 `;

@@ -86,7 +86,6 @@ export const Projetos: React.FC = () => {
   return (
     <Container id="projetos">
       <Title label="Projetos" />
-
       <Content>
         <ImageSlider
           components={[

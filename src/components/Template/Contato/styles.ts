@@ -1,19 +1,24 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+import facepaint from 'facepaint';
 
-  position: relative;
+import { breakpoints } from '../../../styles/global';
+
+const mq = facepaint(breakpoints);
+
+export const Container = styled.div`
+  /* height: 100%;
+  width: 100%; */
 
   width: 100%;
 
+  border: 1px solid red;
+
   main {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
 
+    position: relative;
     background-color: var(--container);
     border-radius: 10px;
 
@@ -21,8 +26,10 @@ export const Container = styled.div`
 
     width: 100%;
 
-    position: relative;
-    z-index: 5;
+    ${mq({
+      display: ['flex', 'flex', 'grid'],
+      'flex-direction': ['column-reverse', 'column-reverse'],
+    })}
   }
 `;
 

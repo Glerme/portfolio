@@ -11,7 +11,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  height: calc(100vh - 60px);
+  width: 100%;
 
   ${mq({
     'flex-direction': ['column-reverse', '', 'row'],
@@ -34,7 +34,7 @@ export const Container = styled.div`
 
     h1 {
       text-align: center;
-      max-width: 100%;
+      max-width: 500px;
 
       ${mq({
         'text-align': ['center', 'center', 'left'],
@@ -47,7 +47,7 @@ export const Container = styled.div`
       color: var(--green);
     }
 
-    & > div {
+    & > button {
       width: 14rem;
     }
   }

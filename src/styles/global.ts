@@ -55,13 +55,12 @@ const GlobalStyles = createGlobalStyle`
 
     font-size: 1rem;
     ${mq({ 'font-size': ['87.5%', '93.75%', '100%'] })}
+
   }
 
   body {
     background-color: var(--background-primary);
     color: var(--white); 
-
-    width: 100%;
   }
 
   body, input, textarea, button {

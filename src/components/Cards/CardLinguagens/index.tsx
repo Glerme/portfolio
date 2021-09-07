@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import { Container } from './styles';
 
 interface CardLinguagensProps {
@@ -13,7 +11,7 @@ export const CardLinguagens: React.FC<CardLinguagensProps> = ({
 }) => {
   return (
     <Container title={title}>
-      <Image src={url} width={100} height={100} alt={title} />
+      <img src={url} width={100} height={100} alt={title} />
       <p>{title}</p>
     </Container>
   );

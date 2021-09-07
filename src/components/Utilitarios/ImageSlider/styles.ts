@@ -1,27 +1,34 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+import facepaint from 'facepaint';
 
-  position: relative;
+import { breakpoints } from '../../../styles/global';
+
+const mq = facepaint(breakpoints);
+
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  padding: 1rem;
 `;
 
 export const Pager = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 
-  position: absolute;
+  z-index: 10;
 
-  right: -110px;
+  ${mq({
+    right: ['15px', '-10px', '-10px'],
+  })}
 
   button {
-    width: 8px;
-    height: 40px;
+    width: 40px;
+    height: 8px;
 
     border-radius: 10px;
     border: 0;

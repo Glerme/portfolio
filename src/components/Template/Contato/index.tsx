@@ -16,65 +16,63 @@ import { Container, ContainerForm, Linhas, RedesSociais } from './styles';
 
 export const Contato: React.FC = () => {
   return (
-    <>
+    <Container id="contato">
       <Title label="Contato" />
-      <Container>
-        <main>
-          <ContainerForm>
-            <h2>Entre em Contato!</h2>
+      <main>
+        <ContainerForm>
+          <h2>Entre em Contato!</h2>
 
-            <Input label="Nome" name="name" />
-            <Input label="Email" name="email" type="email" />
-            <TextArea label="Mensagem" name="name" />
+          <Input label="Nome" name="name" />
+          <Input label="Email" name="email" type="email" />
+          <TextArea label="Mensagem" name="name" />
 
-            <Button
-              label="Enviar"
-              onButtonClick={() => console.log()}
-              type="submit"
+          <Button
+            label="Enviar"
+            onButtonClick={() => console.log()}
+            type="submit"
+          />
+        </ContainerForm>
+        <RedesSociais>
+          <h2>Minhas Redes Sociais</h2>
+          <div>
+            <CardRedesSociais
+              card={[
+                {
+                  icon: FiGithub,
+                  title: 'Github',
+                  url: 'https://github.com/Glerme',
+                },
+                {
+                  icon: FaLinkedinIn,
+                  title: 'Linkedin',
+                  url: 'https://www.linkedin.com/in/glerme/',
+                },
+                {
+                  icon: FaWhatsapp,
+                  title: 'WhatsApp',
+                  url: 'https://api.whatsapp.com/send?phone=5514998363749',
+                },
+                {
+                  icon: FaFacebook,
+                  title: 'Facebook',
+                  url: 'https://www.facebook.com/guilherme.felipe.965/',
+                },
+                {
+                  icon: FaInstagram,
+                  title: 'Instagram',
+                  url: 'https://www.instagram.com/gui_felipeh/',
+                },
+                {
+                  icon: FiMail,
+                  title: 'Email',
+                  url: "mailto:guiggff@gmail.com?subject='Contato'",
+                },
+              ]}
             />
-          </ContainerForm>
-          <RedesSociais>
-            <h2>Minhas Redes Sociais</h2>
-            <div>
-              <CardRedesSociais
-                card={[
-                  {
-                    icon: FiGithub,
-                    title: 'Github',
-                    url: 'https://github.com/Glerme',
-                  },
-                  {
-                    icon: FaLinkedinIn,
-                    title: 'Linkedin',
-                    url: 'https://www.linkedin.com/in/glerme/',
-                  },
-                  {
-                    icon: FaWhatsapp,
-                    title: 'WhatsApp',
-                    url: 'https://api.whatsapp.com/send?phone=5514998363749',
-                  },
-                  {
-                    icon: FaFacebook,
-                    title: 'Facebook',
-                    url: 'https://www.facebook.com/guilherme.felipe.965/',
-                  },
-                  {
-                    icon: FaInstagram,
-                    title: 'Instagram',
-                    url: 'https://www.instagram.com/gui_felipeh/',
-                  },
-                  {
-                    icon: FiMail,
-                    title: 'Email',
-                    url: "mailto:guiggff@gmail.com?subject='Contato'",
-                  },
-                ]}
-              />
-            </div>
-          </RedesSociais>
-        </main>
+          </div>
+        </RedesSociais>
         <Linhas />
-      </Container>
-    </>
+      </main>
+    </Container>
   );
 };
