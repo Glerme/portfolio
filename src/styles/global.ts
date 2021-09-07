@@ -52,6 +52,7 @@ const GlobalStyles = createGlobalStyle`
   html, body, div#__next {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+
     font-size: 1rem;
     ${mq({ 'font-size': ['87.5%', '93.75%', '100%'] })}
   }
@@ -79,11 +80,6 @@ const GlobalStyles = createGlobalStyle`
 
   button {
     cursor: pointer;
-  }
-
-  img{
-    width: 100%;
-    height: 100%;
   }
 
   a{

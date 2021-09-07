@@ -11,26 +11,35 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-
-  width: 100%;
-
   height: calc(100vh - 60px);
 
   ${mq({
-    display: ['grid', 'grid', 'flex'],
-    'grid-template-columns': ['1fr'],
+    'flex-direction': ['column-reverse', '', 'row'],
   })}
 
   img {
-    width: 300px;
+    ${mq({
+      width: ['300px', '350px', '500px'],
+    })}
   }
 
   section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    ${mq({
+      'align-items': ['center', 'center', 'flex-start'],
+    })}
+
     h1 {
-      font-size: 3.125rem;
+      text-align: center;
       max-width: 100%;
+
+      ${mq({
+        'text-align': ['center', 'center', 'left'],
+        'font-size': ['2.5rem', '2.5rem', '3.125rem'],
+      })}
     }
 
     span {
