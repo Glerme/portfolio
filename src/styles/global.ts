@@ -1,4 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
+import facepaint from 'facepaint';
+
+export const breakpoints = [
+  '@media(min-width: 425px)',
+  '@media(min-width: 768px)',
+  '@media(min-width: 1080px)',
+];
+
+const mq = facepaint(breakpoints);
 
 const GlobalStyles = createGlobalStyle`
 
@@ -23,7 +32,6 @@ const GlobalStyles = createGlobalStyle`
 
   }
 
-
  * {
     margin: 0;
     padding: 0;
@@ -44,12 +52,15 @@ const GlobalStyles = createGlobalStyle`
   html, body, div#__next {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
-    overflow: hidden;
+    font-size: 1rem;
+    ${mq({ 'font-size': ['87.5%', '93.75%', '100%'] })}
   }
 
   body {
     background-color: var(--background-primary);
     color: var(--white); 
+
+    width: 100%;
   }
 
   body, input, textarea, button {

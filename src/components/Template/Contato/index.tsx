@@ -10,14 +10,13 @@ import { Input } from '../../Forms/Input';
 import { Button } from '../../Forms/Button';
 import { TextArea } from '../../Forms/TextArea';
 import { Title } from '../../Utilitarios/Title';
-import { PageContainer } from '../../Containers/PageContainer';
 import { CardRedesSociais } from '../../Cards/CardRedesSociais';
 
 import { Container, ContainerForm, Linhas, RedesSociais } from './styles';
 
 export const Contato: React.FC = () => {
   return (
-    <PageContainer>
+    <>
       <Title label="Contato" />
       <Container>
         <main>
@@ -76,6 +75,6 @@ export const Contato: React.FC = () => {
         </main>
         <Linhas />
       </Container>
-    </PageContainer>
+    </>
   );
 };
