@@ -14,6 +14,6 @@ export const Container = styled.div`
   width: 100%;
 
   ${mq({
-    'grid-template-columns': ['1fr', 'repeat(2, 1fr)', 'repeat(3, 1fr)'],
+    'grid-template-columns': ['1fr 1fr', 'repeat(2, 1fr)', 'repeat(3, 1fr)'],
   })}
 `;

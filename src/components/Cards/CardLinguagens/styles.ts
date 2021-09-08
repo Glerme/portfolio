@@ -18,11 +18,9 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  border: 0;
-  border-radius: 10px;
-  background-color: var(--black-500);
+  /* background-color: var(--black-500); */
 
-  width: 100%;
+  /* width: 100%; */
 
   transition: all 0.5s ease-in-out;
 
@@ -36,9 +34,15 @@ export const Container = styled.div`
   img {
     width: 100%;
     height: 150px;
+    padding: 1rem;
   }
 
   &:hover {
+    border: 1px solid var(--black-800);
+    background-color: var(--black-800);
+
+    z-index: 10;
+
     animation: ${iconAnimation} 1s infinite;
   }
 `;

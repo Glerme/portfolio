@@ -12,7 +12,6 @@
     "format": "prettier --check 'src/*/*.{js,ts,tsx}'"
   },
   "dependencies": {
-    "@types/facepaint": "^1.2.2",
     "dotenv": "^10.0.0",
     "dotenv-safe": "^8.2.0",
     "facepaint": "^1.2.1",
@@ -22,10 +21,13 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-page-scroller": "^2.2.1",
+    "react-slick": "^0.28.1",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
+    "@types/facepaint": "^1.2.2",
     "@types/react": "^17.0.14",
+    "@types/react-slick": "^0.23.5",
     "@types/styled-components": "^5.1.10",
     "@typescript-eslint/eslint-plugin": "^4.26.1",
     "@typescript-eslint/parser": "^4.26.1",

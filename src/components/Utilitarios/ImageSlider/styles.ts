@@ -20,7 +20,7 @@ export const Pager = styled.section`
   align-items: center;
   gap: 1rem;
 
-  z-index: 10;
+  z-index: 1;
 
   ${mq({
     right: ['15px', '-10px', '-10px'],

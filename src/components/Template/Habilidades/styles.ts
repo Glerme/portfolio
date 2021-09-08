@@ -1,17 +1,6 @@
 import styled from 'styled-components';
 
-import facepaint from 'facepaint';
-
-import { breakpoints } from '../../../styles/global';
-
-const mq = facepaint(breakpoints);
-
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
   width: 100%;
   height: 100%;
 `;
@@ -21,12 +10,11 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
 
-  background-color: var(--container);
-  border-radius: 10px;
-
   position: relative;
 
   padding: 2rem 5rem;
+
+  border: 1px solid red;
 
   width: 100%;
 
@@ -35,7 +23,11 @@ export const Content = styled.div`
   z-index: 1;
 
   main {
-    border: 1px solid green;
+    background-color: var(--container);
+
+    border-radius: 10px;
+
+    min-height: 450px;
 
     width: 100%;
     height: 100%;
