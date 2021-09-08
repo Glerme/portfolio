@@ -3,6 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   height: 100%;
+
+  div {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const Content = styled.div`
@@ -10,29 +15,16 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
 
-  position: relative;
+  background-color: var(--container);
+  border-radius: 10px;
 
   padding: 2rem 5rem;
 
-  border: 1px solid red;
-
-  width: 100%;
-
-  min-height: 450px;
-
-  z-index: 1;
+  position: relative;
 
   main {
-    background-color: var(--container);
-
-    border-radius: 10px;
-
-    min-height: 450px;
-
+    z-index: 5;
     width: 100%;
-    height: 100%;
-
-    margin: 1rem;
   }
 `;
 
@@ -43,13 +35,15 @@ export const Linhas = styled.div`
 
   border-radius: 10px;
 
+  border: 5px solid var(--green);
+
   position: absolute;
 
   width: 100%;
   height: 100%;
 
-  top: 0px;
-  left: 0px;
+  top: 20px;
+  left: 20px;
 
-  z-index: 0;
+  z-index: -10;
 `;

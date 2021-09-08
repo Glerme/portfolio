@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin: 1rem;
-
   margin-bottom: 3rem;
 
   .slick-dots {
-    margin: 1rem 0 0 0;
+    margin: 2rem 0 0;
 
     button::before {
       font-size: 1rem;

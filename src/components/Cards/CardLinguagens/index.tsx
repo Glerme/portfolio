@@ -2,17 +2,19 @@ import { Container } from './styles';
 
 interface CardLinguagensProps {
   title: string;
-  url: string;
+  image: string;
 }
 
 export const CardLinguagens: React.FC<CardLinguagensProps> = ({
-  url,
+  image,
   title,
 }) => {
   return (
-    <Container title={title}>
-      <img src={url} width={100} height={100} alt={title} />
-      <p>{title}</p>
+    <Container>
+      <Container title={title}>
+        <img src={image} width={100} height={100} alt={title} />
+        <p>{title}</p>
+      </Container>
     </Container>
   );
 };

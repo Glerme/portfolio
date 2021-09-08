@@ -3,6 +3,7 @@ import { ImageSlider } from '../../Utilitarios/ImageSlider';
 import { ProjetosContainer } from '../../Containers/ProjetosContainer';
 
 import { Content, Container } from './styles';
+import { Carrosel } from '../../Utilitarios/Carrosel';
 
 export const Projetos: React.FC = () => {
   const options = [
@@ -87,7 +88,9 @@ export const Projetos: React.FC = () => {
     <Container id="projetos">
       <Title label="Projetos" />
       <Content>
-        <ImageSlider
+        {/* <Carrosel rows={1} /> */}
+
+        {/* <ImageSlider
           components={[
             {
               component: ProjetosContainer,
@@ -102,7 +105,7 @@ export const Projetos: React.FC = () => {
               },
             },
           ]}
-        />
+        /> */}
       </Content>
     </Container>
   );

@@ -13,16 +13,14 @@ const iconAnimation = keyframes`
 `;
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  gap: 0.5rem;
 
-  /* background-color: var(--black-500); */
+  padding: 0.5rem;
 
-  /* width: 100%; */
-
-  transition: all 0.5s ease-in-out;
+  width: 100%;
 
   p {
     font-weight: 600;
@@ -35,5 +33,9 @@ export const Container = styled.div`
     width: 100%;
     height: 150px;
     padding: 1rem;
+  }
+
+  &:hover {
+    animation: ${iconAnimation} 1s infinite;
   }
 `;
