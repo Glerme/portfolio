@@ -36,13 +36,4 @@ export const Container = styled.div`
     height: 150px;
     padding: 1rem;
   }
-
-  &:hover {
-    border: 1px solid var(--black-800);
-    background-color: var(--black-800);
-
-    z-index: 10;
-
-    animation: ${iconAnimation} 1s infinite;
-  }
 `;

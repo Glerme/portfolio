@@ -29,7 +29,10 @@ export const Carrosel: React.FC = () => {
         rows={2}
         dots
         infinite
-        speed={500}
+        autoplay={true}
+        autoplaySpeed={3000}
+        pauseOnHover={true}
+        speed={1000}
         slidesToShow={3}
         slidesToScroll={1}
         nextArrow={<BsChevronDoubleRight size={24} color={'var(--green)'} />}
