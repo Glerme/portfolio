@@ -6,16 +6,16 @@ import { breakpoints } from '../../../styles/global';
 
 const mq = facepaint(breakpoints);
 
-export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+// export const Container = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr);
 
-  ${mq({
-    'grid-template-columns': ['1fr', 'repeat(2, 1fr)', 'repeat(3, 1fr)'],
-  })}
-`;
+//   ${mq({
+//     'grid-template-columns': ['1fr', 'repeat(2, 1fr)', 'repeat(3, 1fr)'],
+//   })}
+// `;
 
-export const Content = styled.a`
+export const LinkContainer = styled.div`
   display: flex;
   align-items: flex-end;
 
@@ -31,9 +31,9 @@ export const Content = styled.a`
   width: 260px;
   height: 200px;
 
-  ${mq({
+  /* ${mq({
     width: ['350px', '300', '260px'],
-  })}
+  })} */
 
   &:hover {
     transform: translateY(20px);
@@ -74,6 +74,13 @@ export const Content = styled.a`
   }
 
   div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    flex: 1;
+
     position: relative;
     z-index: 3;
     opacity: 0;
