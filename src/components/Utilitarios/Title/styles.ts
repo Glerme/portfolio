@@ -15,7 +15,7 @@ export const Container = styled.div`
 
   p {
     ${mq({
-      'font-size': ['3.5rem', '4rem', '5rem'],
+      'font-size': ['3.2rem', '4rem', '5rem'],
     })}
 
     font-weight: 600;

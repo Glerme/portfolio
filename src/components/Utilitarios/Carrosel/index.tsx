@@ -29,36 +29,36 @@ export const Carrosel: React.FC<CarroseProps> = ({ components }) => {
     prevArrow: <BsChevronLeft size={20} color={'var(--green)'} />,
     responsive: [
       {
-        breakpoint: 425, // devices 768 and below
+        breakpoint: 425,
         settings: {
           arrows: true,
           dots: false,
           rows: 1,
-          slidesToShow: 1, // for mobile show 1 slide
-          slidesToScroll: 1, // and scroll 1 slide when arrow clicked
+          slidesToShow: 1,
+          slidesToScroll: 1,
           autoplay: true,
         },
       },
 
       {
-        breakpoint: 768, // devices 768 and below
+        breakpoint: 768,
         settings: {
           dots: true,
           arrows: true,
           rows: 1,
-          slidesToShow: 2, // for mobile show 1 slide
-          slidesToScroll: 2, // and scroll 1 slide when arrow clicked
+          slidesToShow: 2,
+          slidesToScroll: 2,
           autoplay: true,
         },
       },
 
       {
-        breakpoint: 1080, // devices 768 and below
+        breakpoint: 1080,
         settings: {
           arrows: true,
           rows: 2,
-          slidesToShow: 3, // for mobile show 1 slide
-          slidesToScroll: 1, // and scroll 1 slide when arrow clicked
+          slidesToShow: 3,
+          slidesToScroll: 1,
           autoplay: true,
         },
       },
