@@ -28,17 +28,18 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column;
 
+    max-width: 600px;
+
     ${mq({
       'align-items': ['center', 'center', 'flex-start'],
     })}
 
     h1 {
       text-align: center;
-      max-width: 500px;
 
       ${mq({
         'text-align': ['center', 'center', 'left'],
-        'font-size': ['2.5rem', '2.5rem', '3.125rem'],
+        'font-size': ['2rem', '2.5rem', '3.125rem'],
       })}
     }
 

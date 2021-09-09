@@ -7,8 +7,6 @@ export const Container = styled.li`
 
   list-style: none;
 
-  margin: 1rem;
-
   width: 100%;
 
   a {

@@ -9,12 +9,10 @@ interface MenuItemProps {
 
 export const MenuItem: React.FC<MenuItemProps> = ({ label, url }) => {
   return (
-    <>
-      <Container>
-        <Link href={url} passHref>
-          <a title={label}>{label}</a>
-        </Link>
-      </Container>
-    </>
+    <Container>
+      <Link href={url} passHref>
+        <a title={label}>{label}</a>
+      </Link>
+    </Container>
   );
 };

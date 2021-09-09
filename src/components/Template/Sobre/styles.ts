@@ -7,8 +7,12 @@ import { breakpoints } from '../../../styles/global';
 const mq = facepaint(breakpoints);
 
 export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   width: 100%;
-  height: 100%;
 `;
 
 export const Content = styled.section`
@@ -16,13 +20,10 @@ export const Content = styled.section`
   justify-content: center;
   align-items: center;
 
-  gap: 2rem;
-
   ${mq({
     display: ['grid', 'grid', 'flex'],
     'flex-direction': ['column', 'column', 'row'],
     'place-items': ['center'],
-    padding: ['2rem', '2rem', '0'],
   })}
 `;
 
@@ -32,7 +33,7 @@ export const TextContainer = styled.article`
 
   max-width: 600px;
 
-  padding: 1rem 0;
+  padding: 2rem;
 
   margin: 1rem 0;
 `;

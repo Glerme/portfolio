@@ -15,7 +15,9 @@ export const Container = styled.div`
 
   margin: 0 auto;
 
-  width: 100%;
+  border: 1px solid red;
+
+  height: 100%;
 
   ${mq({
     display: ['grid', 'flex'],

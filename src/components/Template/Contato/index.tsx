@@ -41,7 +41,7 @@ export const Contato: React.FC = () => {
             />
           </form>
 
-          <RedesSociais>
+          {/* <RedesSociais>
             <h2>Minhas Redes Sociais!</h2>
             <div>
               <CardRedesSociais
@@ -79,7 +79,7 @@ export const Contato: React.FC = () => {
                 ]}
               />
             </div>
-          </RedesSociais>
+          </RedesSociais> */}
         </main>
         <Linhas />
       </Content>

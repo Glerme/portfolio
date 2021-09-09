@@ -71,12 +71,12 @@ export const Projetos: React.FC = () => {
   return (
     <Container id="projetos">
       <Title label="Projetos" />
-      <Carrosel
+      {/* <Carrosel
         components={cards.map(card => ({
           component: CardProjetos,
           props: card,
         }))}
-      />
+      /> */}
     </Container>
   );
 };

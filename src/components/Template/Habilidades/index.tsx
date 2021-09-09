@@ -25,7 +25,7 @@ export const Habilidades: React.FC = () => {
   return (
     <Container>
       <Title label="Habilidades" />
-
+      {/* 
       <Content>
         <main>
           <Carrosel
@@ -36,7 +36,7 @@ export const Habilidades: React.FC = () => {
           />
         </main>
         <Linhas />
-      </Content>
+      </Content> */}
     </Container>
   );
 };

@@ -6,7 +6,7 @@ import { Container, Contato, Content, TextContainer } from './styles';
 export const Sobre: React.FC = () => {
   return (
     <Container id="sobre">
-      <Title label="Sobre Mim" />
+      {/* <Title label="Sobre Mim" /> */}
 
       <Content>
         <div>

@@ -97,12 +97,16 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
   }
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
  
 
   .card__collection {
     position: relative;
     display: block;
-    padding: 10px;
     overflow: hidden;
 
     .cards {

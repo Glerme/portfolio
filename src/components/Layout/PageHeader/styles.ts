@@ -4,16 +4,13 @@ interface HeaderProps {
   isMenuOpen: boolean;
 }
 
-export const Container = styled.div`
+export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   margin: 0 auto;
 
-  max-width: 1120px;
-
-  height: 55px;
   width: 100%;
 
   img {
@@ -30,8 +27,8 @@ export const Header = styled.header<HeaderProps>`
 
   max-width: 1120px;
 
-  height: 55px;
   width: 100%;
+
   @media (max-width: 720px) {
     padding: 0 0.3rem;
     nav {

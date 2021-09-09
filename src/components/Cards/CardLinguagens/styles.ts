@@ -13,26 +13,21 @@ const iconAnimation = keyframes`
 `;
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  place-content: center;
-  gap: 0.5rem;
-
-  padding: 0.5rem;
-
-  width: 100%;
-
-  p {
-    font-weight: 600;
-    width: 100%;
-
-    text-align: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   img {
     width: 100%;
-    height: 150px;
-    padding: 1rem;
+    height: 100px;
+    padding: 0.5rem;
+  }
+
+  p {
+    font-weight: 600;
+
+    text-align: center;
   }
 
   &:hover {

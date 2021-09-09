@@ -13,7 +13,12 @@ export const Container = styled.div`
 
   border-radius: 10px;
 
+  /* padding: 2rem; */
+
   img {
+    width: 100%;
+    height: 400px;
+
     position: relative;
     border-radius: 10px;
   }

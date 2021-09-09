@@ -34,9 +34,9 @@ const Home: NextPage = () => {
       > */}
       <Inicio />
       <Sobre />
-      <Habilidades />
+      {/* <Habilidades />
       <Projetos />
-      <Contato />
+      <Contato /> */}
       {/* </ReactPageScroller> */}
     </>
   );

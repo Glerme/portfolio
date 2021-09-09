@@ -6,7 +6,7 @@ export const CardImg: React.FC = () => {
   return (
     <>
       <Container className="card__collection clear-fix">
-        <Linhas />
+        {/* <Linhas /> */}
         <div className="cards cards--two">
           <img src="/foto.png" className="img-responsive" alt="Cards Image" />
           <span className="cards--two__rect"></span>
