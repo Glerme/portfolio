@@ -1,7 +1,6 @@
 import { Title } from '../../Utilitarios/Title';
-import { ImageSlider } from '../../Utilitarios/ImageSlider';
 
-import { Content, Container } from './styles';
+import { Container } from './styles';
 import { Carrosel } from '../../Utilitarios/Carrosel';
 import { CardProjetos } from '../../Cards/CardProjetos';
 
