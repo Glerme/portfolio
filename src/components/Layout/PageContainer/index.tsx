@@ -13,7 +13,7 @@ export const PageContainer: React.FC<PageContainerProps> = ({
 }) => {
   return (
     <Container {...rest}>
-      <Title label={title} />
+      {title && <Title label={title} />}
       {children}
     </Container>
   );

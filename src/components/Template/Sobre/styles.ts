@@ -7,24 +7,17 @@ import { breakpoints } from '../../../styles/global';
 const mq = facepaint(breakpoints);
 
 export const Content = styled.section`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
   gap: 1rem;
   width: 100%;
 
   ${mq({
-    display: ['grid', 'grid', 'flex'],
-    'flex-direction': ['column', 'row'],
-    'justify-content': ['center', 'space-between'],
-    'align-items': ['center'],
-
-    'place-items': ['center'],
-    'grid-template-columns': ['1fr'],
+    'flex-direction': ['column', 'column', 'row'],
   })}
-`;
-
-export const CardContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 export const TextContainer = styled.article`

@@ -13,13 +13,17 @@ export const Container = styled.div`
 
   border-radius: 10px;
 
+  position: relative;
+
   img {
-    position: relative;
     border-radius: 10px;
 
+    width: 100%;
+
+    z-index: 1;
+
     ${mq({
-      width: ['300px', '100%', '100%'],
-      height: ['400px', '400px', '400px'],
+      height: ['350px', '400px', '400px'],
     })}
   }
 `;
@@ -32,14 +36,17 @@ export const Linhas = styled.div`
   border-radius: 15px;
   border: 5px solid var(--green);
 
-  width: 300px;
-  height: 390px;
+  width: 100%;
+  height: 100%;
 
   position: absolute;
+  /* 
+  top: 20px;
+  left: 20px; */
 
   ${mq({
-    top: ['25px', '30px'],
-    right: ['5px', '0px'],
+    top: ['10px', '15px'],
+    right: ['-10px', '-15px'],
   })}
 
   z-index: 0;

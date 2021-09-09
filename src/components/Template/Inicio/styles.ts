@@ -8,10 +8,8 @@ const mq = facepaint(breakpoints);
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-
-  width: 100%;
 
   ${mq({
     'flex-direction': ['column-reverse', '', 'row'],
@@ -25,7 +23,7 @@ export const Container = styled.div`
 
   section {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
 
     max-width: 600px;
@@ -36,6 +34,8 @@ export const Container = styled.div`
 
     h1 {
       text-align: center;
+
+      max-width: 500px;
 
       ${mq({
         'text-align': ['center', 'center', 'left'],

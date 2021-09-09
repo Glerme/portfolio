@@ -13,14 +13,11 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  max-width: 1120px;
-
   margin: 0 auto;
 
-  height: 100%;
-  width: 100%;
-
   border: 1px solid red;
+
+  width: 100%;
 
   ${mq({
     padding: ['0 1rem', '0'],
