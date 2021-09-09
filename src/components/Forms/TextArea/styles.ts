@@ -16,7 +16,6 @@ export const Container = styled.div`
 
     height: 100px;
     max-height: 100px;
-    min-width: 300px;
     resize: vertical;
   }
 `;

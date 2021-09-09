@@ -9,23 +9,15 @@ import {
 import { Input } from '../../Forms/Input';
 import { Button } from '../../Forms/Button';
 import { TextArea } from '../../Forms/TextArea';
-import { Title } from '../../Utilitarios/Title';
+import { PageContainer } from '../../Layout/PageContainer';
 import { CardRedesSociais } from '../../Cards/CardRedesSociais';
 
-import {
-  Container,
-  // ContainerForm,
-  Content,
-  Linhas,
-  RedesSociais,
-} from './styles';
+import { Container, Linhas, RedesSociais } from './styles';
 
 export const Contato: React.FC = () => {
   return (
-    <Container id="contato">
-      <Title label="Contato" />
-
-      <Content>
+    <PageContainer id="contato" title="Contato">
+      <Container>
         <main>
           <form>
             <h2>Entre em Contato!</h2>
@@ -41,9 +33,9 @@ export const Contato: React.FC = () => {
             />
           </form>
 
-          {/* <RedesSociais>
+          <RedesSociais>
             <h2>Minhas Redes Sociais!</h2>
-            <div>
+            <section>
               <CardRedesSociais
                 card={[
                   {
@@ -78,21 +70,11 @@ export const Contato: React.FC = () => {
                   },
                 ]}
               />
-            </div>
-          </RedesSociais> */}
+            </section>
+          </RedesSociais>
         </main>
         <Linhas />
-      </Content>
-
-      {/* <Content>
-        <main>
-          
-
-          
-        </main>
-
-        <Linhas />
-      </Content> */}
-    </Container>
+      </Container>
+    </PageContainer>
   );
 };

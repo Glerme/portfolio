@@ -9,7 +9,7 @@ export const Container = styled.a`
   background-color: var(--black-500);
   border-radius: 10px;
 
-  margin: 0.5rem;
+  margin: 0.3rem;
 
   width: 120px;
   height: 120px;

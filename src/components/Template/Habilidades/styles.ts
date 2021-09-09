@@ -14,6 +14,8 @@ export const Container = styled.div`
   background-color: var(--container);
   border-radius: 10px;
 
+  border: 3px solid var(--red);
+
   padding: 2rem 5rem;
 
   position: relative;
@@ -34,7 +36,7 @@ export const Linhas = styled.div`
 
   border-radius: 10px;
 
-  border: 5px solid var(--green);
+  border: 3px solid var(--green);
 
   position: absolute;
 

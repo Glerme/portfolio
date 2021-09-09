@@ -15,8 +15,6 @@ export const Container = styled.div`
 
   margin: 0 auto;
 
-  border: 1px solid red;
-
   width: 100%;
 
   ${mq({
