@@ -40,9 +40,6 @@ export const Linhas = styled.div`
   height: 100%;
 
   position: absolute;
-  /* 
-  top: 20px;
-  left: 20px; */
 
   ${mq({
     top: ['10px', '15px'],

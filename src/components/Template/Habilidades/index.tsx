@@ -34,7 +34,7 @@ export const Habilidades: React.FC = () => {
             }))}
           />
         </main>
-        {/* <Linhas /> */}
+        <Linhas />
       </Container>
     </PageContainer>
   );
