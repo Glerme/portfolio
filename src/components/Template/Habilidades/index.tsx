@@ -1,9 +1,8 @@
-import { Title } from '../../Utilitarios/Title';
+import { Carrosel } from '../../Utilitarios/Carrosel';
+import { PageContainer } from '../../Layout/PageContainer';
+import { CardLinguagens } from '../../Cards/CardLinguagens';
 
 import { Container, Linhas } from './styles';
-import { Carrosel } from '../../Utilitarios/Carrosel';
-import { CardLinguagens } from '../../Cards/CardLinguagens';
-import { PageContainer } from '../../Layout/PageContainer';
 
 export const Habilidades: React.FC = () => {
   const images = [
@@ -24,7 +23,7 @@ export const Habilidades: React.FC = () => {
   ];
 
   return (
-    <PageContainer title="Habilidades">
+    <PageContainer title="Habilidades" id="habilidades">
       <Container>
         <main>
           <Carrosel

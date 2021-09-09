@@ -1,21 +1,15 @@
 import styled from 'styled-components';
 
-import facepaint from 'facepaint';
-
-import { breakpoints } from '../../../styles/global';
-
 export const LinkContainer = styled.div`
-  border-radius: 15px;
-
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   transition: 0.4s ease-out;
-  box-shadow: 0px 7px 10px rgba(black, 0.5);
 
-  margin: 1.5rem;
-
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
 
   a {
     display: flex;
@@ -23,12 +17,19 @@ export const LinkContainer = styled.div`
     align-items: center;
     flex-direction: column;
 
+    position: relative;
+
     width: 100%;
     height: 100%;
 
-    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
 
-    z-index: 10;
+      padding: 1rem;
+    }
   }
 
   &:hover {
@@ -52,21 +53,13 @@ export const LinkContainer = styled.div`
     z-index: 2;
   }
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 15px;
-  }
-
   div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    position: absolute;
 
     z-index: 3;
     opacity: 0;

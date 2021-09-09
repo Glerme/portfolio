@@ -3,6 +3,7 @@ import { Title } from '../../Utilitarios/Title';
 import { Container } from './styles';
 import { Carrosel } from '../../Utilitarios/Carrosel';
 import { CardProjetos } from '../../Cards/CardProjetos';
+import { PageContainer } from '../../Layout/PageContainer';
 
 export const Projetos: React.FC = () => {
   const cards = [
@@ -69,14 +70,15 @@ export const Projetos: React.FC = () => {
   ];
 
   return (
-    <Container id="projetos">
-      <Title label="Projetos" />
-      {/* <Carrosel
-        components={cards.map(card => ({
-          component: CardProjetos,
-          props: card,
-        }))}
-      /> */}
-    </Container>
+    <PageContainer id="projetos" title="Projetos">
+      <Container>
+        <Carrosel
+          components={cards.map(card => ({
+            component: CardProjetos,
+            props: card,
+          }))}
+        />
+      </Container>
+    </PageContainer>
   );
 };

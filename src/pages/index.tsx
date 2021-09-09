@@ -35,8 +35,8 @@ const Home: NextPage = () => {
       <Inicio />
       <Sobre />
       <Habilidades />
-      {/* 
       <Projetos />
+      {/* 
       <Contato /> */}
       {/* </ReactPageScroller> */}
     </>
