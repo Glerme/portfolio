@@ -7,28 +7,33 @@ import { breakpoints } from '../../../styles/global';
 const mq = facepaint(breakpoints);
 
 export const Content = styled.section`
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-
+  gap: 1rem;
   width: 100%;
 
   ${mq({
-    display: ['grid', 'flex', 'flex'],
-    'flex-direction': ['column', 'column', 'row'],
+    display: ['grid', 'grid', 'flex'],
+    'flex-direction': ['column', 'row'],
     'justify-content': ['center', 'space-between'],
+    'align-items': ['center'],
+
     'place-items': ['center'],
     'grid-template-columns': ['1fr'],
   })}
 `;
 
+export const CardContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const TextContainer = styled.article`
   display: flex;
+  justify-content: center;
   flex-direction: column;
 
+  padding: 1rem;
   max-width: 600px;
-
-  padding: 2rem;
 
   margin: 1rem 0;
 `;
@@ -36,10 +41,13 @@ export const TextContainer = styled.article`
 export const Contato = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 
   margin-top: 2rem;
 
   div {
+    width: 100%;
+
     span {
       color: var(--green);
 

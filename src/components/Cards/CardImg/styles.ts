@@ -13,10 +13,6 @@ export const Container = styled.div`
 
   border-radius: 10px;
 
-  ${mq({
-    padding: ['1rem', '0', '0'],
-  })}
-
   img {
     position: relative;
     border-radius: 10px;
@@ -41,13 +37,10 @@ export const Linhas = styled.div`
 
   position: absolute;
 
-  top: 50px;
-  right: 10px;
-
-  /* ${mq({
-    top: ['40px', '40px', '25px'],
-    right: ['0px', '0px', '20px'],
-  })} */
+  ${mq({
+    top: ['25px', '30px'],
+    right: ['5px', '0px'],
+  })}
 
   z-index: 0;
 `;

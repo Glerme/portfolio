@@ -1,14 +1,15 @@
 import { CardImg } from '../../Cards/CardImg';
 import { PageContainer } from '../../Layout/PageContainer';
-import { Title } from '../../Utilitarios/Title';
 
-import { Contato, Content, TextContainer } from './styles';
+import { CardContainer, Contato, Content, TextContainer } from './styles';
 
 export const Sobre: React.FC = () => {
   return (
     <PageContainer title="Sobre Mim" id="sobre">
       <Content>
-        <CardImg />
+        <CardContainer>
+          <CardImg />
+        </CardContainer>
         <TextContainer>
           <p>
             Olá, meu nome é Guilherme <span>.</span>
