@@ -13,14 +13,18 @@ export const Container = styled.div`
 
   border-radius: 10px;
 
-  /* padding: 2rem; */
+  ${mq({
+    padding: ['1rem', '0', '0'],
+  })}
 
   img {
-    width: 100%;
-    height: 400px;
-
     position: relative;
     border-radius: 10px;
+
+    ${mq({
+      width: ['300px', '100%', '100%'],
+      height: ['400px', '400px', '400px'],
+    })}
   }
 `;
 
@@ -37,10 +41,13 @@ export const Linhas = styled.div`
 
   position: absolute;
 
-  ${mq({
+  top: 50px;
+  right: 10px;
+
+  /* ${mq({
     top: ['40px', '40px', '25px'],
     right: ['0px', '0px', '20px'],
-  })}
+  })} */
 
   z-index: 0;
 `;

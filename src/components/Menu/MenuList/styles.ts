@@ -7,8 +7,6 @@ export const NavBarContainer = styled.nav`
   height: 100%;
   z-index: 2000;
 
-  border: 1px solid white;
-
   @media (max-width: 720px) {
     background-color: var(--container);
 

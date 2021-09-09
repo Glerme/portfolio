@@ -25,12 +25,13 @@ export const Header = styled.header<HeaderProps>`
 
   margin: 0 auto;
 
+  padding: 0 1rem;
+
   max-width: 1120px;
 
   width: 100%;
 
   @media (max-width: 720px) {
-    padding: 0 0.3rem;
     nav {
       display: ${({ isMenuOpen }) => (isMenuOpen ? 'flex' : 'none')};
     }

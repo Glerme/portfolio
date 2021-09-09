@@ -7,6 +7,8 @@ import { breakpoints } from '../../../styles/global';
 const mq = facepaint(breakpoints);
 
 export const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -15,12 +17,12 @@ export const Container = styled.div`
 
   margin: 0 auto;
 
+  height: 100%;
+  width: 100%;
+
   border: 1px solid red;
 
-  height: 100%;
-
   ${mq({
-    display: ['grid', 'flex'],
-    'grid-template-columns': ['1fr'],
+    padding: ['0 1rem', '0'],
   })}
 `;

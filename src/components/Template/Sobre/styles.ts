@@ -6,24 +6,19 @@ import { breakpoints } from '../../../styles/global';
 
 const mq = facepaint(breakpoints);
 
-export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  width: 100%;
-`;
-
 export const Content = styled.section`
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
+  width: 100%;
 
   ${mq({
-    display: ['grid', 'grid', 'flex'],
+    display: ['grid', 'flex', 'flex'],
     'flex-direction': ['column', 'column', 'row'],
+    'justify-content': ['center', 'space-between'],
     'place-items': ['center'],
+    'grid-template-columns': ['1fr'],
   })}
 `;
 

@@ -11,8 +11,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  position: relative;
-
   margin-bottom: 1rem;
 
   p {

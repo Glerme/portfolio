@@ -1,18 +1,14 @@
 import { CardImg } from '../../Cards/CardImg';
+import { PageContainer } from '../../Layout/PageContainer';
 import { Title } from '../../Utilitarios/Title';
 
-import { Container, Contato, Content, TextContainer } from './styles';
+import { Contato, Content, TextContainer } from './styles';
 
 export const Sobre: React.FC = () => {
   return (
-    <Container id="sobre">
-      {/* <Title label="Sobre Mim" /> */}
-
+    <PageContainer title="Sobre Mim" id="sobre">
       <Content>
-        <div>
-          <CardImg />
-        </div>
-
+        <CardImg />
         <TextContainer>
           <p>
             Olá, meu nome é Guilherme <span>.</span>
@@ -51,6 +47,6 @@ export const Sobre: React.FC = () => {
           </Contato>
         </TextContainer>
       </Content>
-    </Container>
+    </PageContainer>
   );
 };
