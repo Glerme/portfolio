@@ -4,40 +4,34 @@ import facepaint from 'facepaint';
 
 import { breakpoints } from '../../../styles/global';
 
-const mq = facepaint(breakpoints);
-
-// export const Container = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
-
-//   ${mq({
-//     'grid-template-columns': ['1fr', 'repeat(2, 1fr)', 'repeat(3, 1fr)'],
-//   })}
-// `;
-
 export const LinkContainer = styled.div`
-  display: flex;
-  align-items: flex-end;
-
-  background-color: transparent;
   border-radius: 15px;
 
-  margin: 1rem;
   position: relative;
 
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 10px rgba(black, 0.5);
 
-  width: 260px;
+  margin: 1.5rem;
+
+  width: 300px;
   height: 200px;
 
-  /* ${mq({
-    width: ['350px', '300', '260px'],
-  })} */
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+
+    z-index: 10;
+  }
 
   &:hover {
-    transform: translateY(20px);
-
     &:before {
       opacity: 1;
     }
@@ -49,18 +43,13 @@ export const LinkContainer = styled.div`
   }
 
   &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
     width: 100%;
     height: 100%;
-    border-radius: 15px;
-    background: rgba(black, 0.6);
-    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
     transition: 0.5s;
     opacity: 0;
+
+    z-index: 2;
   }
 
   img {
@@ -79,21 +68,14 @@ export const LinkContainer = styled.div`
     align-items: center;
     flex-direction: column;
 
-    flex: 1;
-
-    position: relative;
     z-index: 3;
     opacity: 0;
-    transform: translateY(30px);
     transition: 0.5s;
 
-    background-color: var(--black-800);
-
-    border-radius: 0 0 16px 16px;
-
-    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
 
     width: 100%;
+    height: 100%;
 
     h1 {
       margin: 0px;
