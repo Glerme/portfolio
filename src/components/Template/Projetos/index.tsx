@@ -11,19 +11,14 @@ interface ProjetosProps {
 }
 
 export const Projetos: React.FC<ProjetosProps> = ({ cards }) => {
-  console.log('cards', cards);
-
   return (
     <PageContainer id="projetos" title="Projetos">
       <Container>
-        <Carrosel
-          components={cards.map(card => ({
-            component: CardProjetos,
-            props: {
-              data: card,
-            },
-          }))}
-        />
+        <Carrosel>
+          {cards.map(card => (
+            <CardProjetos key={card.uid} data={card} />
+          ))}
+        </Carrosel>
       </Container>
     </PageContainer>
   );

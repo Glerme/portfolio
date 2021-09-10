@@ -33,8 +33,6 @@ const Home: NextPage<HomeProps> = ({ cardProjetos }) => {
     console.log(number);
   };
 
-  console.log(cardProjetos);
-
   return (
     <>
       {/* <ReactPageScroller

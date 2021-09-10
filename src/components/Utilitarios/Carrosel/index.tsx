@@ -3,27 +3,15 @@ import Slider from 'react-slick';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 import { Container } from './styles';
-import { CardProjetosProps } from '../../../types/CardProjetoProps';
 
-interface ComponentItem {
-  component: React.FC;
-  props: {
-    data: CardProjetosProps;
-  };
-}
-
-interface CarroselProps {
-  components: ComponentItem[];
-}
-
-export const Carrosel: React.FC<CarroselProps> = ({ components }) => {
+export const Carrosel: React.FC = ({ children }) => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    rows: 2,
+    rows: 1,
     nextArrow: <BsChevronRight size={20} color={'var(--green)'} />,
     prevArrow: <BsChevronLeft size={20} color={'var(--green)'} />,
     responsive: [
@@ -66,11 +54,7 @@ export const Carrosel: React.FC<CarroselProps> = ({ components }) => {
 
   return (
     <Container>
-      <Slider {...settings}>
-        {components.map(({ component: Component, props }, index) => (
-          <Component key={index} {...props} />
-        ))}
-      </Slider>
+      <Slider {...settings}>{children}</Slider>
     </Container>
   );
 };

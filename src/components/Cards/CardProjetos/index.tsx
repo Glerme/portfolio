@@ -18,19 +18,15 @@ interface ProjetosContainerProps {
 }
 
 export const CardProjetos: React.FC<ProjetosContainerProps> = ({ data }) => {
-  console.log(data);
-
   return (
-    <>
-      {/* <LinkContainer title={title} key={uid}>
-        <a href={url.url} target="_blank" rel="noopener noreferrer">
-          <img src={image.url} alt={image.alt} />
-          <div>
-            <h1>{title}</h1>
-            <p>{text}</p>
-          </div>
-        </a>
-      </LinkContainer> */}
-    </>
+    <LinkContainer title={data.title}>
+      <a href={data.url.url} target="_blank" rel="noopener noreferrer">
+        <img src={data.image.url} alt={data.image.alt} />
+        <div>
+          <h1>{data.title}</h1>
+          <p>{data.text}</p>
+        </div>
+      </a>
+    </LinkContainer>
   );
 };

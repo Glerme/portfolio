@@ -26,12 +26,11 @@ export const Habilidades: React.FC = () => {
     <PageContainer title="Habilidades" id="habilidades">
       <Container>
         <main>
-          <Carrosel
-            components={images.map(imagem => ({
-              component: CardLinguagens,
-              props: imagem,
-            }))}
-          />
+          <Carrosel>
+            {images.map(({ image, title }, index) => (
+              <CardLinguagens image={image} title={title} key={index} />
+            ))}
+          </Carrosel>
         </main>
         <Linhas />
       </Container>
