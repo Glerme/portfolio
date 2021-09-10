@@ -3,21 +3,20 @@ import Slider from 'react-slick';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 import { Container } from './styles';
+import { CardProjetosProps } from '../../../types/CardProjetoProps';
 
 interface ComponentItem {
   component: React.FC;
   props: {
-    title: string;
-    image: string;
-    url?: string;
+    data: CardProjetosProps;
   };
 }
 
-interface CarroseProps {
+interface CarroselProps {
   components: ComponentItem[];
 }
 
-export const Carrosel: React.FC<CarroseProps> = ({ components }) => {
+export const Carrosel: React.FC<CarroselProps> = ({ components }) => {
   const settings = {
     dots: true,
     infinite: true,

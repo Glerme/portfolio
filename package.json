@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@prismicio/client": "^5.1.0",
+    "@types/prismic-dom": "^2.1.1",
     "dotenv": "^10.0.0",
     "dotenv-safe": "^8.2.0",
     "facepaint": "^1.2.1",

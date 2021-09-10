@@ -25,10 +25,8 @@ export const LinkContainer = styled.div`
     img {
       width: 100%;
       height: 100%;
-      top: 0;
-      left: 0;
 
-      padding: 1rem;
+      margin: 1rem;
     }
   }
 
@@ -60,6 +58,8 @@ export const LinkContainer = styled.div`
     flex-direction: column;
 
     position: absolute;
+
+    padding: 1rem;
 
     z-index: 3;
     opacity: 0;

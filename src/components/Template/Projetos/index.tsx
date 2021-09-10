@@ -1,73 +1,17 @@
-import { Title } from '../../Utilitarios/Title';
+import { CardProjetosProps } from '../../../types/CardProjetoProps';
 
-import { Container } from './styles';
 import { Carrosel } from '../../Utilitarios/Carrosel';
 import { CardProjetos } from '../../Cards/CardProjetos';
 import { PageContainer } from '../../Layout/PageContainer';
 
-export const Projetos: React.FC = () => {
-  const cards = [
-    {
-      title: 'HTML',
-      image: '/telaInicial.png',
-      url: 'https://www.google.com.br',
-      description: 'lorem ipsum dolor',
-    },
-    {
-      title: 'CSS',
-      image: '/telaInicial.png',
-      url: 'www.google.com.br',
-      description: 'lorem ipsum dolor',
-    },
-    {
-      title: 'CSS',
-      image: '/telaInicial.png',
-      url: 'www.google.com.br',
-      description: 'lorem ipsum dolor',
-    },
-    {
-      title: 'CSS',
-      image: '/telaInicial.png',
-      url: 'www.google.com.br',
-      description: 'lorem ipsum dolor',
-    },
-    {
-      title: 'CSS',
-      image: '/telaInicial.png',
-      url: 'www.google.com.br',
-      description: 'lorem ipsum dolor',
-    },
-    {
-      title: 'CSS',
-      image: '/telaInicial.png',
-      url: 'www.google.com.br',
-      description: 'lorem ipsum dolor',
-    },
-    {
-      title: 'CSS',
-      image: '/telaInicial.png',
-      url: 'www.google.com.br',
-      description: 'lorem ipsum dolor',
-    },
-    {
-      title: 'CSS',
-      image: '/telaInicial.png',
-      url: 'www.google.com.br',
-      description: 'lorem ipsum dolor',
-    },
-    {
-      title: 'CSS',
-      image: '/telaInicial.png',
-      url: 'www.google.com.br',
-      description: 'lorem ipsum dolor',
-    },
-    {
-      title: 'CSS',
-      image: '/telaInicial.png',
-      url: 'www.google.com.br',
-      description: 'lorem ipsum dolor',
-    },
-  ];
+import { Container } from './styles';
+
+interface ProjetosProps {
+  cards: CardProjetosProps[];
+}
+
+export const Projetos: React.FC<ProjetosProps> = ({ cards }) => {
+  console.log('cards', cards);
 
   return (
     <PageContainer id="projetos" title="Projetos">
@@ -75,7 +19,9 @@ export const Projetos: React.FC = () => {
         <Carrosel
           components={cards.map(card => ({
             component: CardProjetos,
-            props: card,
+            props: {
+              data: card,
+            },
           }))}
         />
       </Container>
