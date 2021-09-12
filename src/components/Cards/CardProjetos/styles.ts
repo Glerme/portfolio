@@ -17,6 +17,8 @@ export const LinkContainer = styled.div`
     align-items: center;
     flex-direction: column;
 
+    padding: 1rem;
+
     position: relative;
 
     width: 100%;
@@ -59,7 +61,7 @@ export const LinkContainer = styled.div`
 
     position: absolute;
 
-    padding: 1rem;
+    padding: 2rem;
 
     z-index: 3;
     opacity: 0;

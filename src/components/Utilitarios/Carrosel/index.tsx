@@ -9,9 +9,9 @@ export const Carrosel: React.FC = ({ children }) => {
     dots: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    rows: 1,
+    rows: 2,
     nextArrow: <BsChevronRight size={20} color={'var(--green)'} />,
     prevArrow: <BsChevronLeft size={20} color={'var(--green)'} />,
     responsive: [
