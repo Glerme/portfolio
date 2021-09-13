@@ -11,6 +11,7 @@ import { Inicio } from '../components/Template/Inicio';
 import { Contato } from '../components/Template/Contato';
 import { Projetos } from '../components/Template/Projetos';
 import { Habilidades } from '../components/Template/Habilidades';
+import { ButtonToTop } from '../components/Utilitarios/ButtonToTop';
 
 interface HomeProps {
   cardProjetos: CardProjetosProps[];
@@ -25,6 +26,7 @@ const Home: NextPage<HomeProps> = ({ cardProjetos, cardHabilidades }) => {
       <Habilidades cards={cardHabilidades} />
       <Projetos cards={cardProjetos} />
       <Contato />
+      <ButtonToTop />
     </>
   );
 };

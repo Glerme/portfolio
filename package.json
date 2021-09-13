@@ -16,6 +16,7 @@
     "@types/prismic-dom": "^2.1.1",
     "dotenv": "^10.0.0",
     "dotenv-safe": "^8.2.0",
+    "emailjs-com": "^3.2.0",
     "facepaint": "^1.2.1",
     "next": "^11.0.1",
     "next-compose-plugins": "^2.2.1",
