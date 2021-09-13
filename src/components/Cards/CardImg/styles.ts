@@ -17,13 +17,14 @@ export const Container = styled.div`
 
   img {
     border-radius: 10px;
+    border: 2px solid var(--red);
 
     width: 100%;
 
     z-index: 1;
 
     ${mq({
-      height: ['350px', '400px', '400px'],
+      height: ['300px', '400px', '400px'],
     })}
   }
 `;

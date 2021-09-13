@@ -5,7 +5,11 @@ import { Contato, Content, TextContainer } from './styles';
 
 export const Sobre: React.FC = () => {
   return (
-    <PageContainer title="Sobre Mim" id="sobre">
+    <PageContainer
+      title="Sobre Mim"
+      id="sobre"
+      style={{ backgroundColor: 'var(--background-secondary)' }}
+    >
       <Content>
         <CardImg />
         <TextContainer>

@@ -21,10 +21,12 @@ export const Container = styled.div`
   position: relative;
 
   width: 100%;
-  height: 100%;
 
-  main {
+  & > section {
+    padding: 1rem;
+
     z-index: 5;
+    height: 100%;
     width: 100%;
   }
 `;

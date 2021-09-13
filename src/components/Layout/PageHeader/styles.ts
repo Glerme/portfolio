@@ -4,12 +4,14 @@ interface HeaderProps {
   isMenuOpen: boolean;
 }
 
-export const Container = styled.header`
+export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   margin: 0 auto;
+
+  padding: 2rem;
 
   width: 100%;
 
@@ -24,8 +26,6 @@ export const Header = styled.header<HeaderProps>`
   align-items: center;
 
   margin: 0 auto;
-
-  padding: 0 1rem;
 
   max-width: 1120px;
 

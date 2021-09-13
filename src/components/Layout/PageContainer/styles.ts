@@ -2,15 +2,25 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-
-  max-width: 1120px;
 
   margin: 0 auto;
   padding: 1rem;
 
   width: 100%;
-  height: 100%;
+
+  & > main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 700px;
+
+    width: 100%;
+
+    max-width: 1120px;
+  }
 `;

@@ -14,7 +14,7 @@ export const PageContainer: React.FC<PageContainerProps> = ({
   return (
     <Container {...rest}>
       {title && <Title label={title} />}
-      {children}
+      <main>{children}</main>
     </Container>
   );
 };

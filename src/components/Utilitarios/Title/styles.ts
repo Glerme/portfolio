@@ -13,6 +13,8 @@ export const Container = styled.div`
 
   margin-bottom: 1rem;
 
+  width: 100%;
+
   p {
     ${mq({
       'font-size': ['3.2rem', '4rem', '5rem'],

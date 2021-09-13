@@ -12,7 +12,11 @@ interface ProjetosProps {
 
 export const Projetos: React.FC<ProjetosProps> = ({ cards }) => {
   return (
-    <PageContainer id="projetos" title="Projetos">
+    <PageContainer
+      id="projetos"
+      title="Projetos"
+      style={{ backgroundColor: 'var(--background-secondary)' }}
+    >
       <Container>
         <Carrosel>
           {cards.map(card => (

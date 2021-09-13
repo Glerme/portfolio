@@ -11,6 +11,8 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  width: 100%;
+
   ${mq({
     'flex-direction': ['column-reverse', '', 'row'],
   })}

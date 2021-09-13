@@ -25,6 +25,9 @@ export const LinkContainer = styled.div`
     height: 100%;
 
     img {
+      border: 2px solid var(--red);
+      border-radius: 10px;
+
       width: 100%;
       height: 100%;
 
@@ -61,18 +64,19 @@ export const LinkContainer = styled.div`
 
     position: absolute;
 
-    padding: 2rem;
+    padding: 3rem;
 
     z-index: 3;
     opacity: 0;
     transition: 0.5s;
 
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(17, 17, 17, 0.6);
 
     width: 100%;
     height: 100%;
 
     h1 {
+      font-size: 1.5rem;
       margin: 0px;
     }
 

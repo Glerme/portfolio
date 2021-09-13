@@ -8,7 +8,7 @@ const mq = facepaint(breakpoints);
 
 export const Content = styled.section`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 
@@ -18,6 +18,10 @@ export const Content = styled.section`
   ${mq({
     'flex-direction': ['column', 'column', 'row'],
   })}
+
+  @media(min-width: 768px) and (max-width: 950px) {
+    justify-content: center;
+  }
 `;
 
 export const TextContainer = styled.article`
