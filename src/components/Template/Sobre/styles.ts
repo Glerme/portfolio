@@ -32,7 +32,7 @@ export const TextContainer = styled.article`
   padding: 1rem;
   max-width: 600px;
 
-  margin: 1rem 0;
+  font-size: 1rem;
 `;
 
 export const Contato = styled.div`

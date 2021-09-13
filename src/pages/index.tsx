@@ -1,7 +1,4 @@
-import { useCallback, useState } from 'react';
 import { GetStaticProps, NextPage } from 'next';
-
-import ReactPageScroller from 'react-page-scroller';
 
 import Prismic from '@prismicio/client';
 import { RichText } from 'prismic-dom';
@@ -21,35 +18,13 @@ interface HomeProps {
 }
 
 const Home: NextPage<HomeProps> = ({ cardProjetos, cardHabilidades }) => {
-  const [currentPage, setCurrentPage] = useState(null);
-
-  const handlePageChange = useCallback(
-    number => {
-      setCurrentPage(number);
-    },
-    [currentPage],
-  );
-
-  const handleBeforePageChange = number => {
-    console.log(number);
-  };
-
   return (
     <>
-      {/* <ReactPageScroller
-        animationTimerBuffer={0}
-        blockScrollDown={false}
-        blockScrollUp={false}
-        pageOnChange={handlePageChange}
-        onBeforePageScroll={handleBeforePageChange}
-        customPageNumber={currentPage}
-      > */}
       <Inicio />
       <Sobre />
       <Habilidades cards={cardHabilidades} />
       <Projetos cards={cardProjetos} />
       <Contato />
-      {/* </ReactPageScroller> */}
     </>
   );
 };

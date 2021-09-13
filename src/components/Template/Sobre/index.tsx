@@ -13,9 +13,7 @@ export const Sobre: React.FC = () => {
       <Content>
         <CardImg />
         <TextContainer>
-          <p>
-            Olá, meu nome é Guilherme <span>.</span>
-          </p>
+          <p>Olá, meu nome é Guilherme.</p>
 
           <br />
 

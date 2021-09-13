@@ -53,7 +53,6 @@ const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
 
-    overflow-x: hidden;
 
     font-size: 1rem;
     ${mq({ 'font-size': ['87.5%', '93.75%', '100%'] })}
