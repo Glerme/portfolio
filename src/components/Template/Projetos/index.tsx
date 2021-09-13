@@ -1,4 +1,4 @@
-import { CardProjetosProps } from '../../../types/CardProjetoProps';
+import { CardProjetosProps } from '../../../types/CardsTypes';
 
 import { Carrosel } from '../../Utilitarios/Carrosel';
 import { CardProjetos } from '../../Cards/CardProjetos';

@@ -10,3 +10,14 @@ export interface CardProjetosProps {
   };
   text: string;
 }
+
+export interface CardHabilidadesProps {
+  uid: string;
+  title: string;
+  image: {
+    dimensions: { width: number; height: number };
+    alt: string;
+    copyright: string | null;
+    url: string;
+  };
+}
