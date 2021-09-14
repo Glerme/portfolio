@@ -1,8 +1,8 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
+import { RichText } from 'prismic-dom';
 import Prismic from '@prismicio/client';
 import { getPrismicClient } from '../../../services/prismic';
-import { RichText } from 'prismic-dom';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'GET') {
