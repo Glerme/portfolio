@@ -14,8 +14,6 @@
   "dependencies": {
     "@prismicio/client": "^5.1.0",
     "@types/prismic-dom": "^2.1.1",
-    "dotenv": "^10.0.0",
-    "dotenv-safe": "^8.2.0",
     "emailjs-com": "^3.2.0",
     "facepaint": "^1.2.1",
     "next": "^11.0.1",
@@ -27,6 +25,7 @@
     "react-icons": "^4.2.0",
     "react-page-scroller": "^2.2.1",
     "react-slick": "^0.28.1",
+    "react-toastify": "^8.0.2",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {

@@ -2,8 +2,12 @@ import Head from 'next/head';
 import { NextPage } from 'next';
 import { AppProps } from 'next/dist/next-server/lib/router/router';
 
-import GlobalStyles from '../styles/global';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { Layout } from '../components/Layout';
+
+import GlobalStyles from '../styles/global';
 
 const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
   return (
@@ -13,6 +17,7 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
       </Head>
       <GlobalStyles />
       <Layout>
+        <ToastContainer />
         <Component {...pageProps} />
       </Layout>
     </>

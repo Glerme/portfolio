@@ -4,7 +4,7 @@ import { Container } from './styles';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
-  onButtonClick: () => void;
+  onButtonClick?: () => void;
 }
 
 export const Button: React.FC<ButtonProps> = ({

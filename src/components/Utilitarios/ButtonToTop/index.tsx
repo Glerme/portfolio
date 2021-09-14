@@ -24,7 +24,7 @@ export const ButtonToTop: React.FC = () => {
   };
 
   return (
-    <Container>
+    <Container title="Subir para o topo">
       <FaArrowCircleUp
         className="scrollTop"
         onClick={scrollTop}

@@ -12,7 +12,7 @@ export const NavBarContainer = styled.nav`
 
     padding: 0;
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 0;
     width: 100%;
     height: initial;

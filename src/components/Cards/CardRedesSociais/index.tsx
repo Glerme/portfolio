@@ -1,7 +1,5 @@
 import { Container } from './styles';
 
-import { FiGithub } from 'react-icons/fi';
-
 import { IconBaseProps } from 'react-icons/lib';
 
 interface CardProps {
@@ -18,7 +16,13 @@ export const CardRedesSociais: React.FC<CardRedesSociaisProps> = ({ card }) => {
   return (
     <>
       {card.map((c, index) => (
-        <Container title={c.title} key={index}>
+        <Container
+          title={c.title}
+          key={index}
+          href={c.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <c.icon size={48} />
           <p>{c.title}</p>
         </Container>

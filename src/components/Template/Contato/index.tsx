@@ -1,3 +1,8 @@
+import { ChangeEvent, useState } from 'react';
+
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { FiGithub, FiMail } from 'react-icons/fi';
 import {
   FaLinkedinIn,
@@ -15,74 +20,85 @@ import { PageContainer } from '../../Layout/PageContainer';
 import { CardRedesSociais } from '../../Cards/CardRedesSociais';
 
 import { Container, Linhas, RedesSociais } from './styles';
-import { useState } from 'react';
 
 export const Contato: React.FC = () => {
-  const [dataForm, setDataForm] = useState({
-    nome: '',
-    email: '',
-    mensagem: '',
-  });
+  const [nome, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-  emailjs.init('user_rRBKZNkEM0Zsj6VOwpySx');
+  emailjs.init(process.env.USER_ID_EMAILJS);
 
   const handleSubmit = async e => {
     e.preventDefault();
 
-    console.log(dataForm);
+    try {
+      if (nome === '' || email === '' || message === '') {
+        toast.warn('Por Favor, preencha todos os campos.', {
+          theme: 'dark',
+        });
+        return;
+      }
 
-    const parsedData = {
-      from_name: dataForm.nome,
-      email: dataForm.email,
-      message: dataForm.mensagem,
-    };
+      const parsedData = {
+        from_name: nome,
+        email: email,
+        message: message,
+      };
 
-    emailjs
-      .send(
-        'service_4fxl7os',
-        'template_u7zx6md',
-        parsedData,
-        'user_rRBKZNkEM0Zsj6VOwpySx',
-      )
-      .then(
-        result => {
-          console.log(result.text);
-        },
-        error => {
-          console.log(error.text);
-        },
-      );
-  };
+      emailjs
+        .send(
+          process.env.EMAIL_SERVICE,
+          process.env.TEMPLATE_EMAIL,
+          parsedData,
+          process.env.USER_ID_EMAILJS,
+        )
+        .then(() => {
+          toast.success('Enviado!', {
+            position: 'top-right',
+            theme: 'dark',
+          });
+        });
 
-  const formChanged = e => {
-    dataForm[e.target.name] = e.target.value;
-
-    setDataForm(dataForm);
+      setNome('');
+      setEmail('');
+      setMessage('');
+    } catch (error) {
+      toast.error('Ocorreu um erro ao enviar!', {
+        position: 'top-right',
+        theme: 'dark',
+      });
+    }
   };
 
   return (
     <PageContainer id="contato" title="Contato">
       <Container>
         <main>
-          <form onSubmit={e => handleSubmit(e)}>
+          <form onSubmit={handleSubmit}>
             <h2>Entre em Contato!</h2>
 
-            <Input label="Nome" name="nome" onChange={formChanged} />
+            <Input
+              label="Nome"
+              name="nome"
+              onChange={e => setNome(e.target.value)}
+              value={nome}
+            />
             <Input
               label="Email"
               name="email"
               type="email"
-              onChange={formChanged}
+              onChange={e => setEmail(e.target.value)}
+              value={email}
             />
-            <TextArea label="Mensagem" name="mensagem" onChange={formChanged} />
+            <TextArea
+              label="Mensagem"
+              name="mensagem"
+              onChange={e => setMessage(e.target.value)}
+              value={message}
+            />
 
-            <Button
-              label="Enviar"
-              onButtonClick={() => console.log()}
-              type="submit"
-            />
+            <Button label="Enviar" type="submit" />
           </form>
-
           <RedesSociais>
             <h2>Minhas Redes Sociais!</h2>
             <section>
