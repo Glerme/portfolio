@@ -1,8 +1,7 @@
 import Slider from 'react-slick';
 
-import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
-
 import { Container } from './styles';
+import { NextArrow, PrevArrow } from './Arrows';
 
 export const Carrosel: React.FC = ({ children }) => {
   const settings = {
@@ -12,8 +11,7 @@ export const Carrosel: React.FC = ({ children }) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     rows: 2,
-    nextArrow: <BsChevronRight size={20} color={'var(--green)'} />,
-    prevArrow: <BsChevronLeft size={20} color={'var(--green)'} />,
+
     responsive: [
       {
         breakpoint: 425,
@@ -54,7 +52,9 @@ export const Carrosel: React.FC = ({ children }) => {
 
   return (
     <Container>
-      <Slider {...settings}>{children}</Slider>
+      <Slider nextArrow={<NextArrow />} prevArrow={<PrevArrow />} {...settings}>
+        {children}
+      </Slider>
     </Container>
   );
 };
