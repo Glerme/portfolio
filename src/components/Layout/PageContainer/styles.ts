@@ -17,7 +17,7 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column;
 
-    min-height: 700px;
+    min-height: 80vh;
 
     width: 100%;
 

@@ -4,14 +4,7 @@ import { Container } from './styles';
 import { NextArrow, PrevArrow } from './Arrows';
 
 export const Carrosel: React.FC = ({ children }) => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    rows: 2,
-
+  const responsive = {
     responsive: [
       {
         breakpoint: 425,
@@ -21,7 +14,6 @@ export const Carrosel: React.FC = ({ children }) => {
           rows: 1,
           slidesToShow: 1,
           slidesToScroll: 1,
-          autoplay: true,
         },
       },
 
@@ -33,7 +25,6 @@ export const Carrosel: React.FC = ({ children }) => {
           rows: 1,
           slidesToShow: 2,
           slidesToScroll: 2,
-          autoplay: true,
         },
       },
 
@@ -44,7 +35,6 @@ export const Carrosel: React.FC = ({ children }) => {
           rows: 2,
           slidesToShow: 3,
           slidesToScroll: 1,
-          autoplay: true,
         },
       },
     ],
@@ -52,7 +42,19 @@ export const Carrosel: React.FC = ({ children }) => {
 
   return (
     <Container>
-      <Slider nextArrow={<NextArrow />} prevArrow={<PrevArrow />} {...settings}>
+      <Slider
+        autoplay={true}
+        pauseOnHover={true}
+        nextArrow={<NextArrow />}
+        prevArrow={<PrevArrow />}
+        dots={true}
+        infinite={true}
+        speed={1000}
+        slidesToShow={3}
+        slidesToScroll={1}
+        rows={2}
+        {...responsive}
+      >
         {children}
       </Slider>
     </Container>
