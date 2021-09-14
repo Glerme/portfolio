@@ -2,9 +2,12 @@ import { GetStaticProps, NextPage } from 'next';
 
 import Prismic from '@prismicio/client';
 import { RichText } from 'prismic-dom';
-import { getPrismicClient } from '../services/prismic';
 
 import { CardHabilidadesProps, CardProjetosProps } from '../types/CardsTypes';
+
+import { baseUrl } from '../utils/axios';
+
+import { getPrismicClient } from '../services/prismic';
 
 import { Sobre } from '../components/Template/Sobre';
 import { Inicio } from '../components/Template/Inicio';
@@ -32,46 +35,15 @@ const Home: NextPage<HomeProps> = ({ cardProjetos, cardHabilidades }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const prismic = getPrismicClient();
-
-  const response = await prismic.query(
-    [Prismic.predicates.any('document.type', ['projetos', 'habilidades'])],
-    {
-      pageSize: 100,
-      page: 1,
-    },
-  );
-
-  const cardProjetos = response.results
-    .filter(resposta => resposta.type === 'projetos')
-    .sort((a, b) =>
-      a.first_publication_date > b.first_publication_date ? 1 : -1,
-    );
-
-  const cardHabilidades = response.results
-    .filter(resposta => resposta.type === 'habilidades')
-    .sort((a, b) =>
-      a.first_publication_date > b.first_publication_date ? 1 : -1,
-    );
-
-  const parsedCardProjetos = cardProjetos.map(post => ({
-    uid: post.uid,
-    title: RichText.asText(post.data.title),
-    url: post.data.url,
-    image: post.data.image,
-    text: RichText.asText(post.data.text),
-  }));
-
-  const parsedCardHabilidades = cardHabilidades.map(post => ({
-    uid: post.uid,
-    title: RichText.asText(post.data.title),
-    image: post.data.image,
-  }));
+  const [{ data: projetos }, { data: habilidades }] = await Promise.all([
+    baseUrl.get('api/projetos'),
+    baseUrl.get('api/habilidades'),
+  ]);
 
   return {
     props: {
-      cardProjetos: parsedCardProjetos,
-      cardHabilidades: parsedCardHabilidades,
+      cardProjetos: projetos,
+      cardHabilidades: habilidades,
     },
   };
 };
