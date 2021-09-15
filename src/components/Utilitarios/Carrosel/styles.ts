@@ -7,8 +7,7 @@ export const Container = styled.div`
   margin-bottom: 3rem;
 
   .slick-dots {
-    bottom: -4rem;
-    /* margin: rem 0 0 0; */
+    bottom: -3rem;
 
     button::before {
       font-size: 1rem;
