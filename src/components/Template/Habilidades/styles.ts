@@ -18,11 +18,17 @@ export const Container = styled.div`
 
   padding: 2rem 5rem;
 
+  margin-bottom: 3rem;
+
   position: relative;
 
   width: 100%;
+  height: 100%;
 
   & > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
 
     z-index: 5;

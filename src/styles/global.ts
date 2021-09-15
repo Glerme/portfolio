@@ -104,6 +104,8 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
   }
 
+  
+
 `;
 
 export default GlobalStyles;

@@ -12,6 +12,8 @@ export const Content = styled.section`
   align-items: center;
   flex-wrap: wrap;
 
+  margin-bottom: 3rem;
+
   gap: 1rem;
   width: 100%;
 

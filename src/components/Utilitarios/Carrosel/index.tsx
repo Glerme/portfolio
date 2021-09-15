@@ -11,7 +11,7 @@ export const Carrosel: React.FC = ({ children }) => {
         settings: {
           arrows: true,
           dots: false,
-          rows: 1,
+          rows: 3,
           slidesToShow: 1,
           slidesToScroll: 1,
         },
@@ -22,7 +22,7 @@ export const Carrosel: React.FC = ({ children }) => {
         settings: {
           dots: true,
           arrows: true,
-          rows: 1,
+          rows: 2,
           slidesToShow: 2,
           slidesToScroll: 2,
         },

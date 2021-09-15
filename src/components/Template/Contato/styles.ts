@@ -33,7 +33,7 @@ export const Container = styled.div`
 
     width: 100%;
 
-    z-index: 5;
+    z-index: 1000005;
 
     ${mq({
       display: ['flex', 'flex', 'grid'],

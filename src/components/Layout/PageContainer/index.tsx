@@ -1,4 +1,4 @@
-import { HTMLAttributes } from 'react';
+import { HTMLAttributes, useEffect, useState } from 'react';
 import { Title } from '../../Utilitarios/Title';
 import { Container } from './styles';
 
