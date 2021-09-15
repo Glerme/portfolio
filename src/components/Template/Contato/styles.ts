@@ -25,7 +25,7 @@ export const Container = styled.div`
 
   ${mq({
     padding: ['0', '0', '2rem'],
-    height: ['', '100%', '100%', '70vh'],
+    height: ['', '100%', '100%'],
   })}
 
   main {

@@ -20,6 +20,6 @@ export const Container = styled.div`
   height: 100%;
 
   ${mq({
-    height: ['', '100%', '100%', '80vh'],
+    height: ['', '100%', '100%'],
   })}
 `;
