@@ -14,7 +14,7 @@ export const Container = styled.div`
   background-color: var(--container);
   border-radius: 10px;
 
-  border: 3px solid var(--red);
+  border: 3px solid var(--blue);
 
   padding: 2rem 5rem;
 
@@ -25,14 +25,16 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
 
+  ${mq({
+    height: ['', '100%', '100%', '80vh'],
+  })}
+
   & > section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
 
-    z-index: 5;
-    height: 100%;
     width: 100%;
   }
 `;

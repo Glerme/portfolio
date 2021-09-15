@@ -7,7 +7,11 @@ import { breakpoints } from '../../../styles/global';
 const mq = facepaint(breakpoints);
 
 export const Container = styled.div`
-  border: 3px solid var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 3px solid var(--blue);
   border-radius: 10px;
 
   background-color: var(--container);
@@ -21,6 +25,7 @@ export const Container = styled.div`
 
   ${mq({
     padding: ['0', '0', '2rem'],
+    height: ['', '100%', '100%', '70vh'],
   })}
 
   main {
@@ -37,7 +42,7 @@ export const Container = styled.div`
 
     ${mq({
       display: ['flex', 'flex', 'grid'],
-      'justify-content': ['center'],
+      'justify-content': ['center', 'center'],
       'flex-direction': ['column-reverse'],
     })}
 

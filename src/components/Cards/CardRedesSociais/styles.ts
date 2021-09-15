@@ -18,7 +18,7 @@ export const Container = styled.a`
   align-items: center;
   flex-direction: column;
 
-  background-color: var(--black-500);
+  background-color: var(--black-800);
   border-radius: 10px;
 
   margin: 0.3rem;

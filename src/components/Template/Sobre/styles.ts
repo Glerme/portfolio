@@ -19,6 +19,7 @@ export const Content = styled.section`
 
   ${mq({
     'flex-direction': ['column', 'column', 'row'],
+    height: ['', '100%', '100%', '80vh'],
   })}
 
   @media(min-width: 768px) and (max-width: 950px) {

@@ -10,7 +10,6 @@ import { Contato } from '../components/Template/Contato';
 import { Projetos } from '../components/Template/Projetos';
 import { Habilidades } from '../components/Template/Habilidades';
 import { ButtonToTop } from '../components/Utilitarios/ButtonToTop';
-import { useEffect } from 'react';
 
 interface HomeProps {
   projetos?: CardProjetosProps[];

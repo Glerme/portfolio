@@ -17,7 +17,7 @@ export const Container = styled.div`
 
   img {
     border-radius: 10px;
-    border: 2px solid var(--red);
+    border: 3px solid var(--blue);
 
     width: 100%;
 

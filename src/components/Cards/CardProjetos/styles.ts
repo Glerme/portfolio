@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+import facepaint from 'facepaint';
+
+import { breakpoints } from '../../../styles/global';
+
+const mq = facepaint(breakpoints);
+
 export const LinkContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -25,7 +31,7 @@ export const LinkContainer = styled.div`
     height: 100%;
 
     img {
-      border: 2px solid var(--red);
+      border: 3px solid var(--blue-dark);
       border-radius: 10px;
 
       width: 100%;
@@ -74,6 +80,10 @@ export const LinkContainer = styled.div`
 
     width: 100%;
     height: 100%;
+
+    ${mq({
+      padding: ['2rem', '3rem', '3rem'],
+    })}
 
     h1 {
       font-size: 1.5rem;

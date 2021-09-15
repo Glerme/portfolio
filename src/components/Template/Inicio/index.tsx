@@ -36,10 +36,13 @@ export const Inicio: React.FC = () => {
               <span>.</span>
             </h1>
 
-            <Button
-              label={'Contato'}
-              onButtonClick={() => console.log('click')}
-            />
+            <a
+              href="./curriculo/Curriculo.pdf"
+              download="Curriculo.pdf"
+              target="_blank"
+            >
+              Visualize meu currículo!
+            </a>
           </section>
           <img src={'/meninoComputador.svg'} />
         </Fade>

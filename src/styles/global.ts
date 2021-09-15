@@ -5,6 +5,7 @@ export const breakpoints = [
   '@media(min-width: 425px)',
   '@media(min-width: 768px)',
   '@media(min-width: 1080px)',
+  '@media(min-width: 1200px)',
 ];
 
 const mq = facepaint(breakpoints);
@@ -14,21 +15,19 @@ const GlobalStyles = createGlobalStyle`
   :root{
     --white: #ffffff;
 
-    --gray-100: #F3F3F3;
-
     --background-primary: #000000;
     --background-secondary: #111111;
 
     --container: #0B0A0A;
 
-    --black-500: #1F1F1F;
-    --black-800: #494949;
+    --black-800: #1f1f1f;
 
     --green: #4EBA64;
     --green-light:#64EDAA;
 
-    --red: #E3514D;
-    --red-light: #FF726F;
+
+    --blue: #7bccd9;
+    --blue-dark: #008ba1;
 
   }
 

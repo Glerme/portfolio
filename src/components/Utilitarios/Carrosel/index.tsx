@@ -52,7 +52,7 @@ export const Carrosel: React.FC = ({ children }) => {
         speed={1000}
         slidesToShow={3}
         slidesToScroll={1}
-        rows={2}
+        rows={3}
         {...responsive}
       >
         {children}
