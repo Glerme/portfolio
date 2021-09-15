@@ -13,6 +13,9 @@ const nextConfig = {
     EMAIL_SERVICE: process.env.EMAIL_SERVICE,
     TEMPLATE_EMAIL: process.env.TEMPLATE_EMAIL,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = withPlugins([], nextConfig);

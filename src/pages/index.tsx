@@ -1,4 +1,4 @@
-import { GetStaticProps, NextPage } from 'next';
+import { GetServerSideProps, GetStaticProps, NextPage } from 'next';
 
 import { CardHabilidadesProps, CardProjetosProps } from '../types/CardsTypes';
 
@@ -29,7 +29,7 @@ const Home: NextPage<HomeProps> = ({ projetos, habilidades }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   try {
     const [{ data: projetos }, { data: habilidades }] = await Promise.all([
       baseUrl.get('api/projetos'),
