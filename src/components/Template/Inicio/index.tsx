@@ -2,7 +2,6 @@ import { useCallback, useEffect, useState } from 'react';
 
 import { Fade } from 'react-awesome-reveal';
 
-import { Button } from '../../Forms/Button';
 import { PageContainer } from '../../Layout/PageContainer';
 
 import { Container } from './styles';
