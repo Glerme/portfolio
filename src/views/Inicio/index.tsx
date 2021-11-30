@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 import { Fade } from 'react-awesome-reveal';
 
-import { PageContainer } from '../../Layout/PageContainer';
+import { PageContainer } from 'layouts/PageContainer';
 
 import { Container } from './styles';
 
@@ -30,10 +30,13 @@ export const Inicio: React.FC = () => {
       <Container>
         <Fade direction="down">
           <section>
-            <h1>
-              {title}
-              <span>.</span>
-            </h1>
+            <div>
+              <h1>
+                {/* {title} */}
+                Olá, me chamo Guilherme
+                <span>.</span>
+              </h1>
+            </div>
 
             <a
               href="./curriculo/Curriculo.pdf"

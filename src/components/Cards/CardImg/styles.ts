@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
-import facepaint from 'facepaint';
-
-import { breakpoints } from '../../../styles/global';
-
-const mq = facepaint(breakpoints);
+import { breakpoints } from 'styles/breakpoints';
 
 export const Container = styled.div`
   display: flex;
@@ -23,9 +19,17 @@ export const Container = styled.div`
 
     z-index: 1;
 
-    ${mq({
-      height: ['300px', '400px', '400px'],
-    })}
+    @media (min-width: ${breakpoints.sm}px) {
+      height: 300px;
+    }
+
+    @media (min-width: ${breakpoints.md}px) {
+      height: 400px;
+    }
+
+    @media (min-width: ${breakpoints.lg}px) {
+      height: 400px;
+    }
   }
 `;
 
@@ -42,10 +46,15 @@ export const Linhas = styled.div`
 
   position: absolute;
 
-  ${mq({
-    top: ['10px', '15px'],
-    right: ['-10px', '-15px'],
-  })}
+  @media (min-width: ${breakpoints.sm}px) {
+    top: 10px;
+    right: -10px;
+  }
+
+  @media (min-width: ${breakpoints.md}px) {
+    top: 15px;
+    right: -15px;
+  }
 
   z-index: 0;
 `;

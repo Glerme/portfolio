@@ -1,5 +1,7 @@
-import { HTMLAttributes, useEffect, useState } from 'react';
-import { Title } from '../../Utilitarios/Title';
+import { HTMLAttributes } from 'react';
+
+import { Title } from '../../components/Utilitarios/Title';
+
 import { Container } from './styles';
 
 interface PageContainerProps extends HTMLAttributes<HTMLDivElement> {

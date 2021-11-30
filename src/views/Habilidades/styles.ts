@@ -2,10 +2,6 @@ import styled from 'styled-components';
 
 import facepaint from 'facepaint';
 
-import { breakpoints } from '../../../styles/global';
-
-const mq = facepaint(breakpoints);
-
 export const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -24,10 +20,10 @@ export const Container = styled.div`
 
   width: 100%;
   height: 100%;
-
+  /* 
   ${mq({
     height: ['', '100%', '100%', '80vh'],
-  })}
+  })} */
 
   & > section {
     display: flex;
@@ -53,10 +49,10 @@ export const Linhas = styled.div`
   width: 100%;
   height: 100%;
 
-  ${mq({
+  /* ${mq({
     top: ['10px', '15px'],
     right: ['-10px', '-15px'],
-  })}
+  })} */
 
   z-index: -10;
 `;

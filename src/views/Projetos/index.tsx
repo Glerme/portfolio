@@ -1,8 +1,9 @@
-import { CardProjetosProps } from '../../../types/CardsTypes';
+import { CardProjetosProps } from 'types/CardsTypes';
 
-import { Carrosel } from '../../Utilitarios/Carrosel';
-import { CardProjetos } from '../../Cards/CardProjetos';
-import { PageContainer } from '../../Layout/PageContainer';
+import { PageContainer } from 'layouts/PageContainer';
+
+import { Carrosel } from 'components/Utilitarios/Carrosel';
+import { CardProjetos } from 'components/Cards/CardProjetos';
 
 import { Container } from './styles';
 

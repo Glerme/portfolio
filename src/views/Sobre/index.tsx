@@ -1,5 +1,5 @@
-import { CardImg } from '../../Cards/CardImg';
-import { PageContainer } from '../../Layout/PageContainer';
+import { CardImg } from 'components/Cards/CardImg';
+import { PageContainer } from 'layouts/PageContainer';
 
 import { Fade } from 'react-awesome-reveal';
 

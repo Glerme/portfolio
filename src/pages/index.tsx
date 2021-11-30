@@ -1,15 +1,15 @@
-import { GetServerSideProps, GetStaticProps, NextPage } from 'next';
+import { GetServerSideProps, NextPage } from 'next';
 
 import { CardHabilidadesProps, CardProjetosProps } from '../types/CardsTypes';
 
 import { baseUrl } from '../utils/axios';
-
-import { Sobre } from '../components/Template/Sobre';
-import { Inicio } from '../components/Template/Inicio';
-import { Contato } from '../components/Template/Contato';
-import { Projetos } from '../components/Template/Projetos';
-import { Habilidades } from '../components/Template/Habilidades';
 import { ButtonToTop } from '../components/Utilitarios/ButtonToTop';
+
+import { Sobre } from '../views/Sobre';
+import { Inicio } from '../views/Inicio';
+import { Contato } from '../views/Contato';
+import { Projetos } from '../views/Projetos';
+import { Habilidades } from '../views/Habilidades';
 
 interface HomeProps {
   projetos?: CardProjetosProps[];
@@ -22,9 +22,10 @@ const Home: NextPage<HomeProps> = ({ projetos, habilidades }) => {
       <Inicio />
       <Sobre />
       <Habilidades cards={habilidades} />
+      {/*
       <Projetos cards={projetos} />
       <Contato />
-      <ButtonToTop />
+      <ButtonToTop /> */}
     </>
   );
 };

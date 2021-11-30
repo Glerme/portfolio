@@ -15,11 +15,12 @@ import {
 
 import emailjs from 'emailjs-com';
 
-import { Input } from '../../Forms/Input';
-import { Button } from '../../Forms/Button';
-import { TextArea } from '../../Forms/TextArea';
-import { PageContainer } from '../../Layout/PageContainer';
-import { CardRedesSociais } from '../../Cards/CardRedesSociais';
+import { PageContainer } from 'layouts/PageContainer';
+
+import { Input } from 'components/Forms/Input';
+import { Button } from 'components/Forms/Button';
+import { TextArea } from 'components/Forms/TextArea';
+import { CardRedesSociais } from 'components/Cards/CardRedesSociais';
 
 import { Container, Linhas, RedesSociais } from './styles';
 

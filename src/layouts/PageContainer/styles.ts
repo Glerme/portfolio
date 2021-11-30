@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
+  place-content: center;
 
   margin: 0 auto;
   padding: 1rem;
@@ -12,10 +10,8 @@ export const Container = styled.div`
   width: 100%;
 
   & > main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    place-content: center;
 
     min-height: 60vh;
 

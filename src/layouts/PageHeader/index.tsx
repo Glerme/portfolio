@@ -1,6 +1,9 @@
 import { useState } from 'react';
+
 import { FiMenu } from 'react-icons/fi';
-import { MenuList } from '../../Menu/MenuList';
+
+import { MenuList } from '../../components/Menu/MenuList';
+
 import { Container, MenuButton, Header } from './styles';
 
 export const PageHeader: React.FC = () => {
