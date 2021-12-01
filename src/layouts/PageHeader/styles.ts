@@ -1,23 +1,19 @@
 import styled from 'styled-components';
+import { breakpoints } from 'styles/breakpoints';
 
 interface HeaderProps {
   isMenuOpen: boolean;
 }
 
-export const Container = styled.div`
+export const Container = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
-  margin: 0 auto;
-
-  padding: 2rem;
+  grid-area: header;
 
   width: 100%;
-
-  img {
-    width: 100px;
-  }
+  height: 100%;
 `;
 
 export const Header = styled.header<HeaderProps>`
@@ -25,28 +21,39 @@ export const Header = styled.header<HeaderProps>`
   justify-content: space-between;
   align-items: center;
 
-  margin: 0 auto;
-
-  max-width: 1120px;
+  padding: 1rem;
 
   width: 100%;
 
-  @media (max-width: 720px) {
-    nav {
-      display: ${({ isMenuOpen }) => (isMenuOpen ? 'flex' : 'none')};
-    }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media ${breakpoints.md} {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  section {
+    display: ${({ isMenuOpen }) => (isMenuOpen ? 'flex' : 'none')};
   }
 `;
 
-export const MenuButton = styled.button`
+export const MenuButton = styled.button<HeaderProps>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: transparent;
   border: 0;
   color: var(--text-secondary);
-  display: none;
   font-size: 0;
-  padding: 0.3rem;
 
-  @media (max-width: 720px) {
-    display: block;
+  position: relative;
+
+  @media ${breakpoints.md} {
+    display: none;
   }
 `;

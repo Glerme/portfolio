@@ -1,10 +1,9 @@
 import { useCallback, useEffect, useState } from 'react';
-
-import { Fade } from 'react-awesome-reveal';
+import Image from 'next/image';
 
 import { PageContainer } from 'layouts/PageContainer';
 
-import { Container } from './styles';
+import { Container, SectionCard } from './styles';
 
 export const Inicio: React.FC = () => {
   const [title, setTitle] = useState([]);
@@ -16,7 +15,6 @@ export const Inicio: React.FC = () => {
     if (cont < text.length) {
       setTitle(state => [...state, text.charAt(cont)]);
 
-      console.log(text.charAt(cont));
       cont++;
 
       setTimeout(typewriter, 150);
@@ -28,8 +26,8 @@ export const Inicio: React.FC = () => {
   return (
     <PageContainer>
       <Container>
-        <Fade direction="down">
-          <section>
+        <div>
+          <SectionCard>
             <div>
               <h1>
                 {/* {title} */}
@@ -45,9 +43,12 @@ export const Inicio: React.FC = () => {
             >
               Visualize meu currículo!
             </a>
-          </section>
-          <img src={'/meninoComputador.svg'} />
-        </Fade>
+          </SectionCard>
+
+          <SectionCard>
+            <Image src={'/meninoComputador.svg'} width={600} height={400} />
+          </SectionCard>
+        </div>
       </Container>
     </PageContainer>
   );

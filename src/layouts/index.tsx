@@ -1,13 +1,11 @@
 import { PageHeader } from './PageHeader';
-import { PageMain } from './PageMain';
-
-import { Container } from './styles';
+import { PageLayout } from './styles';
 
 export const Layout: React.FC = ({ children }) => {
   return (
-    <Container>
+    <PageLayout>
       <PageHeader />
-      <PageMain>{children}</PageMain>
-    </Container>
+      <div>{children}</div>
+    </PageLayout>
   );
 };

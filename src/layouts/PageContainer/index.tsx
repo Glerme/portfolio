@@ -2,8 +2,6 @@ import { HTMLAttributes } from 'react';
 
 import { Title } from '../../components/Utilitarios/Title';
 
-import { Container } from './styles';
-
 interface PageContainerProps extends HTMLAttributes<HTMLDivElement> {
   title?: string;
 }
@@ -14,9 +12,9 @@ export const PageContainer: React.FC<PageContainerProps> = ({
   ...rest
 }) => {
   return (
-    <Container {...rest}>
+    <div {...rest}>
       {title && <Title label={title} />}
       <main>{children}</main>
-    </Container>
+    </div>
   );
 };
