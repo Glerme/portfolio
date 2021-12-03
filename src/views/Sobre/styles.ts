@@ -1,29 +1,34 @@
 import styled from 'styled-components';
 
-import facepaint from 'facepaint';
-
-import { breakpoints } from 'styles/global';
-
-const mq = facepaint(breakpoints);
+import { breakpoints } from 'styles/breakpoints';
 
 export const Content = styled.section`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
 
-  margin-bottom: 3rem;
+  /* flex-wrap: wrap; */
+
+  padding: 1rem;
 
   gap: 1rem;
   width: 100%;
 
-  ${mq({
-    'flex-direction': ['column', 'column', 'row'],
-    height: ['', '100%', '100%', '80vh'],
-  })}
+  max-width: 1200px;
 
-  @media(min-width: 768px) and (max-width: 950px) {
-    justify-content: center;
+  margin: 0 auto;
+
+  min-height: 80vh;
+
+  @media ${breakpoints.md} {
+    min-height: 80vh;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  @media ${breakpoints.lg} {
+    min-height: 85vh;
   }
 `;
 

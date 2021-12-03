@@ -18,18 +18,6 @@ export const Container = styled.div`
     width: 100%;
 
     z-index: 1;
-
-    @media (min-width: ${breakpoints.sm}px) {
-      height: 300px;
-    }
-
-    @media (min-width: ${breakpoints.md}px) {
-      height: 400px;
-    }
-
-    @media (min-width: ${breakpoints.lg}px) {
-      height: 400px;
-    }
   }
 `;
 
@@ -46,15 +34,8 @@ export const Linhas = styled.div`
 
   position: absolute;
 
-  @media (min-width: ${breakpoints.sm}px) {
-    top: 10px;
-    right: -10px;
-  }
-
-  @media (min-width: ${breakpoints.md}px) {
-    top: 15px;
-    right: -15px;
-  }
+  top: 10px;
+  left: 10px;
 
   z-index: 0;
 `;

@@ -20,7 +20,7 @@ const Home: NextPage<HomeProps> = ({ projetos, habilidades }) => {
   return (
     <>
       <Inicio />
-      {/* <Sobre /> */}
+      <Sobre />
       {/* <Habilidades cards={habilidades} /> */}
       {/*
       <Projetos cards={projetos} />
