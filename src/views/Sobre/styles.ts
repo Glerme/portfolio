@@ -8,8 +8,6 @@ export const Content = styled.section`
   justify-content: center;
   flex-direction: column;
 
-  /* flex-wrap: wrap; */
-
   padding: 1rem;
 
   gap: 1rem;

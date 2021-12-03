@@ -14,7 +14,7 @@ export const PageContainer: React.FC<PageContainerProps> = ({
   return (
     <div {...rest}>
       {title && <Title label={title} />}
-      <main>{children}</main>
+      <main style={{ padding: '1rem' }}>{children}</main>
     </div>
   );
 };

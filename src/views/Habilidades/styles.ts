@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-
-import facepaint from 'facepaint';
+import { breakpoints } from 'styles/breakpoints';
 
 export const Container = styled.div`
   display: flex;
@@ -12,7 +11,7 @@ export const Container = styled.div`
 
   border: 3px solid var(--blue);
 
-  padding: 2rem 5rem;
+  padding: 1rem 2rem;
 
   margin-bottom: 3rem;
 
@@ -20,10 +19,20 @@ export const Container = styled.div`
 
   width: 100%;
   height: 100%;
-  /* 
-  ${mq({
-    height: ['', '100%', '100%', '80vh'],
-  })} */
+
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  min-height: 80vh;
+
+  @media ${breakpoints.md} {
+    min-height: 80vh;
+  }
+
+  @media ${breakpoints.lg} {
+    min-height: 85vh;
+  }
 
   & > section {
     display: flex;
@@ -42,17 +51,20 @@ export const Linhas = styled.div`
 
   border-radius: 10px;
 
-  border: 3px solid var(--green);
+  border: 5px solid var(--green);
 
   position: absolute;
 
   width: 100%;
   height: 100%;
 
-  /* ${mq({
-    top: ['10px', '15px'],
-    right: ['-10px', '-15px'],
-  })} */
+  top: 15px;
+  left: 0px;
+
+  @media ${breakpoints.md} {
+    top: 15px;
+    left: 15px;
+  }
 
   z-index: -10;
 `;
