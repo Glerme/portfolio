@@ -7,14 +7,17 @@ export const PageLayout = styled.div`
 
   @media ${breakpoints.md} {
     display: grid;
+
     grid-template:
       'header' 8rem
       'main' 1fr;
 
-    min-height: 100%;
+    > div {
+      width: 100%;
+      max-width: 1200px;
 
-    div {
-      grid-area: main;
+      padding: 1rem;
+      margin: 0 auto;
     }
   }
 `;

@@ -21,7 +21,7 @@ export const Header = styled.header<HeaderProps>`
   justify-content: space-between;
   align-items: center;
 
-  padding: 1rem;
+  padding: 1rem 2rem;
 
   width: 100%;
 
@@ -33,8 +33,10 @@ export const Header = styled.header<HeaderProps>`
 
   @media ${breakpoints.md} {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+
+    max-width: 1200px;
   }
 
   section {

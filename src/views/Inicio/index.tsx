@@ -24,32 +24,30 @@ export const Inicio: React.FC = () => {
   useEffect(() => typewriter(), []);
 
   return (
-    <PageContainer>
-      <Container>
-        <div>
-          <SectionCard>
-            <div>
-              <h1>
-                {/* {title} */}
-                Olá, me chamo Guilherme
-                <span>.</span>
-              </h1>
-            </div>
+    <Container>
+      <div>
+        <SectionCard>
+          <div>
+            <h1>
+              {/* {title} */}
+              Olá, me chamo Guilherme
+              <span>.</span>
+            </h1>
+          </div>
 
-            <a
-              href="./curriculo/Curriculo.pdf"
-              download="Curriculo.pdf"
-              target="_blank"
-            >
-              Visualize meu currículo!
-            </a>
-          </SectionCard>
+          <a
+            href="./curriculo/Curriculo.pdf"
+            download="Curriculo.pdf"
+            target="_blank"
+          >
+            Visualize meu currículo!
+          </a>
+        </SectionCard>
 
-          <SectionCard>
-            <Image src={'/meninoComputador.svg'} width={600} height={400} />
-          </SectionCard>
-        </div>
-      </Container>
-    </PageContainer>
+        <SectionCard>
+          <Image src={'/meninoComputador.svg'} width={600} height={400} />
+        </SectionCard>
+      </div>
+    </Container>
   );
 };
