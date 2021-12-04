@@ -13,8 +13,6 @@ export const Container = styled.div`
 
   padding: 1rem 2rem;
 
-  margin-bottom: 3rem;
-
   position: relative;
 
   width: 100%;

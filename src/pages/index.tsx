@@ -22,10 +22,10 @@ const Home: NextPage<HomeProps> = ({ projetos, habilidades }) => {
       <Inicio />
       <Sobre />
       <Habilidades cards={habilidades} />
-      {/*
+
       <Projetos cards={projetos} />
       <Contato />
-      <ButtonToTop /> */}
+      <ButtonToTop />
     </>
   );
 };

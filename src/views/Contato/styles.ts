@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
-import facepaint from 'facepaint';
-
-import { breakpoints } from 'styles/global';
-
-const mq = facepaint(breakpoints);
+import { breakpoints } from 'styles/breakpoints';
 
 export const Container = styled.div`
   display: flex;
@@ -18,33 +14,32 @@ export const Container = styled.div`
 
   position: relative;
 
-  margin-bottom: 4rem;
+  padding: 0.5rem;
 
   width: 100%;
   height: 100%;
 
-  ${mq({
-    padding: ['0', '0', '2rem'],
-    height: ['', '100%', '100%'],
-  })}
+  @media ${breakpoints.md} {
+    padding: 2rem 1rem;
+  }
 
   main {
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    place-items: center;
 
     position: relative;
     background-color: var(--container);
 
     border-radius: 10px;
 
+    padding: 1rem;
+
     width: 100%;
 
-    z-index: 1000005;
-
-    ${mq({
-      display: ['flex', 'flex', 'grid'],
-      'justify-content': ['center', 'center'],
-      'flex-direction': ['column-reverse'],
-    })}
+    @media ${breakpoints.md} {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 
     form {
       display: flex;
@@ -55,33 +50,36 @@ export const Container = styled.div`
 
       width: 100%;
       height: 100%;
-
-      ${mq({
-        padding: ['.5rem', '1rem', '0'],
-      })}
     }
   }
 `;
 
 export const RedesSociais = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  place-items: center;
+
+  padding: 1rem;
 
   h2 {
-    ${mq({
-      'margin-top': ['1rem', '1rem', '0'],
-    })}
+    text-align: center;
   }
 
   section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 
-    ${mq({
-      'grid-template-columns': ['1fr 1fr', 'repeat(3, 1fr)', '1fr 1fr'],
-    })}
+    @media ${breakpoints.md} {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media ${breakpoints.lg} {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 `;
 

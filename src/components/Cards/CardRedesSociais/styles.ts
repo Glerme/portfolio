@@ -13,18 +13,17 @@ const iconAnimation = keyframes`
 `;
 
 export const Container = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  place-items: center;
+  place-content: center;
 
   background-color: var(--black-800);
   border-radius: 10px;
 
-  margin: 0.3rem;
+  padding: 1rem;
 
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  height: 100%;
 
   svg {
     margin-bottom: 1rem;
