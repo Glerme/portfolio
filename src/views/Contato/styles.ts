@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import { breakpoints } from 'styles/breakpoints';
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
 
   border: 3px solid var(--blue);
   border-radius: 10px;
@@ -19,9 +18,9 @@ export const Container = styled.div`
   width: 100%;
   height: 100%;
 
-  @media ${breakpoints.md} {
-    padding: 2rem 1rem;
-  }
+  max-width: 1150px;
+
+  margin: 0 auto;
 
   main {
     display: grid;
@@ -44,10 +43,9 @@ export const Container = styled.div`
 
     form {
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: center;
       flex-direction: column;
-      gap: 1.25rem;
+      gap: 1rem;
 
       width: 100%;
       height: 100%;
