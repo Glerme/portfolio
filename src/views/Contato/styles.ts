@@ -39,6 +39,7 @@ export const Container = styled.div`
     @media ${breakpoints.md} {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      min-height: 80vh;
     }
 
     form {

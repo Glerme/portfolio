@@ -8,8 +8,9 @@ export const Container = styled.div`
   position: relative;
 
   padding: 1rem;
-  margin-bottom: 3rem;
+  margin: 0 auto;
 
   width: 100%;
+  max-width: 1200px;
   height: 100%;
 `;

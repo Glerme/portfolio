@@ -23,9 +23,15 @@ import { CardRedesSociais } from 'components/Cards/CardRedesSociais';
 import { Container, Linhas, RedesSociais } from './styles';
 
 export const Contato: React.FC = () => {
-  const [nome, setNome] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  // const [nome, setNome] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [message, setMessage] = useState('');
+
+  const [fields, setFields] = useState({
+    nome: '',
+    email: '',
+    message: '',
+  });
 
   emailjs.init(process.env.USER_ID_EMAILJS);
 
@@ -33,7 +39,7 @@ export const Contato: React.FC = () => {
     e.preventDefault();
 
     try {
-      if (nome === '' || email === '' || message === '') {
+      if (fields.nome === '' || fields.email === '' || fields.message === '') {
         toast.warn('Por Favor, preencha todos os campos.', {
           theme: 'dark',
         });
@@ -41,9 +47,9 @@ export const Contato: React.FC = () => {
       }
 
       const parsedData = {
-        from_name: nome,
-        email: email,
-        message: message,
+        from_name: fields.nome,
+        email: fields.email,
+        message: fields.message,
       };
 
       emailjs
@@ -60,9 +66,11 @@ export const Contato: React.FC = () => {
           });
         });
 
-      setNome('');
-      setEmail('');
-      setMessage('');
+      setFields({
+        email: '',
+        message: '',
+        nome: '',
+      });
     } catch (error) {
       toast.error('Ocorreu um erro ao enviar!', {
         position: 'top-right',
@@ -81,21 +89,36 @@ export const Contato: React.FC = () => {
             <Input
               label="Nome"
               name="nome"
-              onChange={e => setNome(e.target.value)}
-              value={nome}
+              onChange={e =>
+                setFields(fields => ({
+                  ...fields,
+                  nome: e.target.value,
+                }))
+              }
+              value={fields.nome}
             />
             <Input
               label="Email"
               name="email"
               type="email"
-              onChange={e => setEmail(e.target.value)}
-              value={email}
+              onChange={e =>
+                setFields(fields => ({
+                  ...fields,
+                  email: e.target.value,
+                }))
+              }
+              value={fields.email}
             />
             <TextArea
               label="Mensagem"
               name="mensagem"
-              onChange={e => setMessage(e.target.value)}
-              value={message}
+              onChange={e =>
+                setFields(fields => ({
+                  ...fields,
+                  message: e.target.value,
+                }))
+              }
+              value={fields.message}
             />
 
             <Button label="Enviar" type="submit" />

@@ -22,10 +22,10 @@ export const Content = styled.section`
   @media ${breakpoints.md} {
     min-height: 80vh;
     justify-content: space-between;
-    flex-direction: row;
   }
 
   @media ${breakpoints.lg} {
+    flex-direction: row;
     min-height: 85vh;
   }
 `;
