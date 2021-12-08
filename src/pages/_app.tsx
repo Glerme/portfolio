@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { NextPage } from 'next';
-import { AppProps } from 'next/dist/next-server/lib/router/router';
+import { AppProps } from 'next/app';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
