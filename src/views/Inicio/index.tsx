@@ -29,8 +29,7 @@ export const Inicio: React.FC = () => {
         <SectionCard>
           <div>
             <h1>
-              {/* {title} */}
-              Olá, me chamo Guilherme
+              {title}
               <span>.</span>
             </h1>
           </div>
