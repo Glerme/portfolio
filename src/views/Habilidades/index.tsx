@@ -1,8 +1,9 @@
-import { CardHabilidadesProps } from '../../../types/CardsTypes';
+import { CardHabilidadesProps } from 'types/CardsTypes';
 
-import { Carrosel } from '../../Utilitarios/Carrosel';
-import { PageContainer } from '../../Layout/PageContainer';
-import { CardLinguagens } from '../../Cards/CardLinguagens';
+import { PageContainer } from 'layouts/PageContainer';
+
+import { Carrosel } from 'components/Utilitarios/Carrosel';
+import { CardLinguagens } from 'components/Cards/CardLinguagens';
 
 import { Container, Linhas } from './styles';
 

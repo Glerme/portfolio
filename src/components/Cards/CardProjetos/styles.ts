@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 
-import facepaint from 'facepaint';
-
-import { breakpoints } from '../../../styles/global';
-
-const mq = facepaint(breakpoints);
+import { breakpoints } from 'styles/breakpoints';
 
 export const LinkContainer = styled.div`
   display: flex;
@@ -81,9 +77,17 @@ export const LinkContainer = styled.div`
     width: 100%;
     height: 100%;
 
-    ${mq({
-      padding: ['2rem', '3rem', '3rem'],
-    })}
+    @media (min-width: ${breakpoints.sm}px) {
+      padding: 2rem;
+    }
+
+    @media (min-width: ${breakpoints.md}px) {
+      padding: 3rem;
+    }
+
+    @media (min-width: ${breakpoints.lg}px) {
+      padding: 3rem;
+    }
 
     h1 {
       font-size: 1.5rem;

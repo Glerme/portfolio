@@ -1,6 +1,6 @@
-import { HTMLAttributes, useEffect, useState } from 'react';
-import { Title } from '../../Utilitarios/Title';
-import { Container } from './styles';
+import { HTMLAttributes } from 'react';
+
+import { Title } from '../../components/Utilitarios/Title';
 
 interface PageContainerProps extends HTMLAttributes<HTMLDivElement> {
   title?: string;
@@ -12,9 +12,9 @@ export const PageContainer: React.FC<PageContainerProps> = ({
   ...rest
 }) => {
   return (
-    <Container {...rest}>
+    <div {...rest}>
       {title && <Title label={title} />}
-      <main>{children}</main>
-    </Container>
+      <main style={{ padding: '2rem' }}>{children}</main>
+    </div>
   );
 };

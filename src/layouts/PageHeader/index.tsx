@@ -1,15 +1,27 @@
 import { useState } from 'react';
+import Image from 'next/image';
+
 import { FiMenu } from 'react-icons/fi';
-import { MenuList } from '../../Menu/MenuList';
+
+import { MenuList } from '../../components/Menu/MenuList';
+
 import { Container, MenuButton, Header } from './styles';
 
 export const PageHeader: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
 
   return (
     <Container>
       <Header isMenuOpen={isMenuOpen}>
-        <img src={'/logo.svg'} alt="Logo" title="Logo" />
+        <div>
+          <Image
+            src={'/logo.svg'}
+            alt="Logo"
+            title="Logo"
+            width={100}
+            height={80}
+          />
+        </div>
 
         <MenuList
           items={[
@@ -32,7 +44,11 @@ export const PageHeader: React.FC = () => {
           ]}
         />
 
-        <MenuButton type="button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <MenuButton
+          type="button"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          isMenuOpen={isMenuOpen}
+        >
           <FiMenu size={24} />
         </MenuButton>
       </Header>

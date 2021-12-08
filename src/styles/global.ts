@@ -1,14 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import facepaint from 'facepaint';
-
-export const breakpoints = [
-  '@media(min-width: 425px)',
-  '@media(min-width: 768px)',
-  '@media(min-width: 1080px)',
-  '@media(min-width: 1200px)',
-];
-
-const mq = facepaint(breakpoints);
+import { breakpoints } from 'styles/breakpoints';
 
 const GlobalStyles = createGlobalStyle`
 
@@ -37,24 +28,25 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  @media (max-width: 1080px) {
-    html {
-      font-size: 93.75%;
-    }
-  }
-  @media (max-width: 720px) {
-    html {
-      font-size: 87.5%;
-    }
-  }
 
   html, body, div#__next {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
 
 
-    font-size: 1rem;
-    ${mq({ 'font-size': ['87.5%', '93.75%', '100%'] })}
+    font-size: 16px;
+
+    @media (min-width: ${breakpoints.sm}px) {
+      font-size: 87.5%;
+    }    
+
+    @media (min-width: ${breakpoints.md}px) {
+      font-size: 93.74%;
+    } 
+
+    @media (min-width: ${breakpoints.lg}px) {
+      font-size: 100%;
+    } 
 
   }
 
@@ -102,6 +94,7 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     height: 100%;
   }
+
 
   
 

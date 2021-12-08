@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Container } from './styles';
 
 interface TitleProps {
@@ -9,8 +7,8 @@ interface TitleProps {
 export const Title: React.FC<TitleProps> = ({ label }) => {
   return (
     <Container>
-      <p>{label}</p>
       <h1>{label}</h1>
+      <p>{label}</p>
     </Container>
   );
 };

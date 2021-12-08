@@ -5,7 +5,7 @@ import { AppProps } from 'next/dist/next-server/lib/router/router';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { Layout } from '../components/Layout';
+import { Layout } from '../layouts';
 
 import GlobalStyles from '../styles/global';
 
