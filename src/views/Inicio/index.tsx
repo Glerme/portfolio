@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
+import { useCallback, useEffect, useState } from 'react';
 
 import { Container, SectionCard } from './styles';
 
