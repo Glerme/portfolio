@@ -41,6 +41,10 @@ export const Header = styled.header<HeaderProps>`
 
   section {
     display: ${({ isMenuOpen }) => (isMenuOpen ? 'flex' : 'none')};
+
+    @media ${breakpoints.md} {
+      display: flex;
+    }
   }
 `;
 
