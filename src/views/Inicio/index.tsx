@@ -1,7 +1,5 @@
-import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
-
-import { PageContainer } from 'layouts/PageContainer';
+import { useCallback, useEffect, useState } from 'react';
 
 import { Container, SectionCard } from './styles';
 
