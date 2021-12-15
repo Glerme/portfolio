@@ -23,10 +23,6 @@ import { CardRedesSociais } from 'components/Cards/CardRedesSociais';
 import { Container, Linhas, RedesSociais } from './styles';
 
 export const Contato: React.FC = () => {
-  // const [nome, setNome] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [message, setMessage] = useState('');
-
   const [fields, setFields] = useState({
     nome: '',
     email: '',
