@@ -11,11 +11,3 @@ export const breakpoints = {
   md: `(min-width:${size.md})`,
   lg: `(min-width:${size.lg})`,
 };
-
-// Antigo Breakpoints
-// export const breakpoints = [
-//   '@media(min-width: 425px)', !SM
-//   '@media(min-width: 768px)', !MD
-//   '@media(min-width: 1080px)', !LG
-//   '@media(min-width: 1200px)',
-// ];
