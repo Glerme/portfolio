@@ -5,17 +5,21 @@ import { Button } from 'components/Forms/Button';
 
 import { ContainerError } from './styles';
 
-export const ErrorView: React.FC = () => {
+interface ErrorViewProps {
+  errorMessage?: string;
+}
+
+export const ErrorView: React.FC<ErrorViewProps> = ({ errorMessage }) => {
   return (
     <ContainerError>
       <section>
         <Image src={'/meninoComputador.svg'} width={500} height={400} />
-        <h1>Ocorreu um erro</h1>
+        <h1>{errorMessage || 'Ocorreu um erro'}</h1>
         <div>
           <Button
             label="Voltar"
             onClick={() => {
-              Router.back();
+              Router.push('/');
             }}
           />
         </div>

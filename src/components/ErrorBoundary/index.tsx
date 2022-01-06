@@ -30,7 +30,7 @@ export class ErrorBoundary extends React.Component<
   render() {
     if (this.state.hasError) {
       // Você pode renderizar qualquer UI alternativa
-      return <ErrorView />;
+      return <ErrorView errorMessage={this.state.error.message} />;
     }
 
     return this.props.children;

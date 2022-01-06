@@ -24,6 +24,8 @@ export const ContainerError = styled.div`
     h1 {
       text-align: center;
 
+      font-size: 2rem;
+
       width: 100%;
     }
   }

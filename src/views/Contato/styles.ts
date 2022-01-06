@@ -26,11 +26,8 @@ export const Container = styled.div`
     place-items: center;
 
     position: relative;
-    background-color: var(--container);
 
     border-radius: 10px;
-
-    padding: 1rem;
 
     width: 100%;
 
@@ -38,6 +35,8 @@ export const Container = styled.div`
       display: grid;
       grid-template-columns: 1fr 1fr;
       min-height: 80vh;
+
+      padding: 1rem;
     }
 
     form {
@@ -60,13 +59,12 @@ export const RedesSociais = styled.div`
 
   h2 {
     text-align: center;
+    margin-bottom: 1rem;
   }
 
   section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 
     @media ${breakpoints.md} {

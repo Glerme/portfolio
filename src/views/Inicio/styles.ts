@@ -65,7 +65,7 @@ export const SectionCard = styled.section`
 
   h1 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 
     @media ${breakpoints.md} {
