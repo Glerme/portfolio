@@ -11,11 +11,11 @@ export const Content = styled.section`
   padding: 1rem;
 
   gap: 1rem;
-  width: 100%;
 
-  max-width: 1200px;
-
+  max-width: 1140px;
   margin: 0 auto;
+
+  width: 100%;
 
   min-height: 80vh;
 

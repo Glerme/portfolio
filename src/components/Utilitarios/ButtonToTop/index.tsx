@@ -24,11 +24,12 @@ export const ButtonToTop: React.FC = () => {
   };
 
   return (
-    <Container title="Subir para o topo">
+    <Container title="Voltar para o topo">
       <FaArrowCircleUp
         className="scrollTop"
         onClick={scrollTop}
         style={{ height: 100, display: showScroll ? 'flex' : 'none' }}
+        size={30}
       />
     </Container>
   );

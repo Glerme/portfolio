@@ -5,7 +5,7 @@ export const Layout: React.FC = ({ children }) => {
   return (
     <PageLayout>
       <PageHeader />
-      <div>{children}</div>
+      <div style={{ marginTop: '3rem' }}>{children}</div>
     </PageLayout>
   );
 };

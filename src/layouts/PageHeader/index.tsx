@@ -1,57 +1,50 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-import { FiMenu } from 'react-icons/fi';
-
-import { MenuList } from '../../components/Menu/MenuList';
-
-import { Container, MenuButton, Header } from './styles';
+import { Logo, MenuMobile, NavButtons, NavContainer } from './styles';
 
 export const PageHeader: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <Container>
-      <Header isMenuOpen={isMenuOpen}>
-        <div>
-          <Image
-            src={'/logo.svg'}
-            alt="Logo"
-            title="Logo"
-            width={100}
-            height={80}
-          />
-        </div>
+    <NavContainer>
+      <nav>
+        <Logo>
+          <figure>
+            <Image
+              src={'/logo.svg'}
+              alt="Logo"
+              title="Logo"
+              width={100}
+              height={80}
+            />
+          </figure>
+        </Logo>
 
-        <MenuList
-          items={[
-            {
-              label: 'Sobre',
-              url: '#sobre',
-            },
-            {
-              label: 'Habilidades',
-              url: '#habilidades',
-            },
-            {
-              label: 'Projetos',
-              url: '#projetos',
-            },
-            {
-              label: 'Contato',
-              url: '#contato',
-            },
-          ]}
-        />
+        <NavButtons isMenuOpen={isMenuOpen}>
+          <li>
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li>
+            <a href="#habilidades">Habilidades</a>
+          </li>
+          <li>
+            <a href="#projetos">Projetos</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+        </NavButtons>
+      </nav>
 
-        <MenuButton
-          type="button"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          isMenuOpen={isMenuOpen}
-        >
-          <FiMenu size={24} />
-        </MenuButton>
-      </Header>
-    </Container>
+      <MenuMobile
+        type="button"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        isMenuOpen={isMenuOpen}
+        title="Menu"
+      >
+        <div></div>
+      </MenuMobile>
+    </NavContainer>
   );
 };

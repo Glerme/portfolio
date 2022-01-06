@@ -1,15 +1,15 @@
 import styled, { keyframes } from 'styled-components';
 
-const fadeIn = keyframes`{
-  0% {
+const fadeIn = keyframes`
+  from {
     height: 40px;
     transform: translateY(0);
   }
-  100% {
+  to {
     height: 10px;
     transform: translateY(30px);
   }
-}`;
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -20,9 +20,7 @@ export const Container = styled.div`
   bottom: -30px;
   right: 0;
 
-  font-size: 3rem;
-
-  padding: 1rem;
+  padding: 0.5rem;
 
   cursor: pointer;
 
@@ -30,7 +28,7 @@ export const Container = styled.div`
   transition: opacity 0.4s;
   opacity: 0.5;
 
-  z-index: 1000;
+  z-index: 10;
 
   &:hover {
     opacity: 1;

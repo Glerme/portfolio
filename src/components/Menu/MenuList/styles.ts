@@ -13,15 +13,14 @@ export const MenuListContainer = styled.ul`
   flex: 1;
 
   background: var(--background-primary);
-  border-radius: 0 0 8px 8px;
 
   list-style: none;
-  width: 100%;
-
-  position: absolute;
 
   top: 5rem;
   left: 0;
+
+  width: 100%;
+  height: 100%;
 
   @media ${breakpoints.md} {
     flex-direction: row;
