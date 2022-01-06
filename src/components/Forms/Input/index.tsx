@@ -11,7 +11,7 @@ export const Input: React.FC<InputProps> = ({ label, name, ...props }) => {
   return (
     <Container>
       <label htmlFor={name}>{label}</label>
-      <input type="text" name={name} {...props} />
+      <input type="text" name={name} id={name} {...props} />
     </Container>
   );
 };

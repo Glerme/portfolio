@@ -15,7 +15,7 @@ export const TextArea: React.FC<TextAreaProps> = ({
   return (
     <Container>
       <label htmlFor={name}>{label}</label>
-      <textarea name={name} {...props} />
+      <textarea name={name} id={name} {...props} />
     </Container>
   );
 };

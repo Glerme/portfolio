@@ -42,7 +42,12 @@ export const Inicio: React.FC = () => {
         </SectionCard>
 
         <SectionCard>
-          <Image src={'/meninoComputador.svg'} width={600} height={400} />
+          <Image
+            src={'/meninoComputador.svg'}
+            width={600}
+            height={400}
+            alt="Menino no computador"
+          />
         </SectionCard>
       </div>
     </Container>

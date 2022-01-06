@@ -13,10 +13,10 @@ export const PageHeader: React.FC = () => {
           <figure>
             <Image
               src={'/logo.svg'}
-              alt="Logo"
               title="Logo"
               width={100}
               height={80}
+              alt="Menino no computador"
             />
           </figure>
         </Logo>

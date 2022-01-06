@@ -13,7 +13,12 @@ export const ErrorView: React.FC<ErrorViewProps> = ({ errorMessage }) => {
   return (
     <ContainerError>
       <section>
-        <Image src={'/meninoComputador.svg'} width={500} height={400} />
+        <Image
+          src={'/meninoComputador.svg'}
+          width={500}
+          height={400}
+          alt="Menino no computador"
+        />
         <h1>{errorMessage || 'Ocorreu um erro'}</h1>
         <div>
           <Button
