@@ -20,10 +20,11 @@ export const Sobre: React.FC = () => {
 
           <p>
             Nascido e criado na cidade de Pederneiras, interior de São Paulo.
-            Curso o curso de Ciência da Computação na Universidade UNIP de
-            Bauru. Interessado na área de técnologia desde muito cedo, com
-            incentivo de minha família, ingressei na área a um ano e meio.
-            Possuo conhecimento na área de desenvolvimento Front-end e mobile.
+            Atualmente estou cursando a faculdade de Ciência da Computação na
+            Universidade UNIP de Bauru. Interessado na área de tecnologia desde
+            muito cedo, com incentivo de minha família, ingressei na área a um
+            ano e meio. Possuo conhecimento na área de desenvolvimento Front-end
+            e mobile.
           </p>
 
           <Contato>

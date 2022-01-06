@@ -17,7 +17,7 @@ export const Container = styled.div`
   justify-content: center;
 
   position: fixed;
-  bottom: -30px;
+  bottom: -20px;
   right: 0;
 
   padding: 0.5rem;
