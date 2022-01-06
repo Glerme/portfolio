@@ -36,15 +36,15 @@ const GlobalStyles = createGlobalStyle`
 
     font-size: 16px;
 
-    @media (min-width: ${breakpoints.sm}px) {
+    @media ${breakpoints.sm} {
       font-size: 87.5%;
     }    
 
-    @media (min-width: ${breakpoints.md}px) {
+    @media ${breakpoints.md} {
       font-size: 93.74%;
     } 
 
-    @media (min-width: ${breakpoints.lg}px) {
+    @media ${breakpoints.lg} {
       font-size: 100%;
     } 
 

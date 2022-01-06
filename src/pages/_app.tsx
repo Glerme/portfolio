@@ -15,6 +15,8 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
     <>
       <Head>
         <title>Guilherme Felipe | Dev. Júnior </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <GlobalStyles />
 
