@@ -11,7 +11,7 @@ import {
   FaInstagram,
 } from 'react-icons/fa';
 
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 import { PageContainer } from 'layouts/PageContainer';
 
