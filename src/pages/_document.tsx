@@ -77,7 +77,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://github.com/Glerme/portfolio/blob/main/public/tela.png"
+            content="https://raw.githubusercontent.com/Glerme/portfolio/main/public/tela.png"
           />
 
           <meta name="twitter:card" content="summary_large_image" />
@@ -93,7 +93,7 @@ export default class MyDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="https://github.com/Glerme/portfolio/blob/main/public/tela.png"
+            content="https://raw.githubusercontent.com/Glerme/portfolio/main/public/tela.png"
           />
         </Head>
         <body>
