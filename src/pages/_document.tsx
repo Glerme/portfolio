@@ -75,7 +75,10 @@ export default class MyDocument extends Document {
             property="og:description"
             content="Meu Portfólio pessoal de projetos."
           />
-          <meta property="og:image" content="https://glerme.dev/tela.png" />
+          <meta
+            property="og:image"
+            content="https://github.com/Glerme/portfolio/blob/main/public/tela.png"
+          />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="twitter:domain" content="glerme.dev" />
@@ -88,7 +91,10 @@ export default class MyDocument extends Document {
             name="twitter:description"
             content="Meu Portfólio pessoal de projetos."
           />
-          <meta name="twitter:image" content="https://glerme.dev/tela.png" />
+          <meta
+            name="twitter:image"
+            content="https://github.com/Glerme/portfolio/blob/main/public/tela.png"
+          />
         </Head>
         <body>
           <Main />
