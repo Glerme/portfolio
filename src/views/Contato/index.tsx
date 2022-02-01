@@ -49,10 +49,10 @@ export const Contato: React.FC = () => {
       };
 
       emailjs
-        .send(
+        .sendForm(
           process.env.EMAIL_SERVICE,
           process.env.TEMPLATE_EMAIL,
-          parsedData,
+          'teste',
           process.env.USER_ID_EMAILJS,
         )
         .then(() => {

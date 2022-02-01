@@ -40,6 +40,9 @@ export default class MyDocument extends Document {
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
+          <meta name="keywords" content="Guilherme Felipe | Dev. Júnior " />
+          <meta name="title" content="Guilherme Felipe | Dev. Júnior " />
+          <meta name="theme-color" content="#000000" />
           <meta
             name="description"
             content="Meu Portfólio pessoal de projetos."
@@ -63,6 +66,34 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+          />
+
+          <meta property="og:url" content="https://glerme.dev/" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Guilherme Felipe | Dev. Júnior " />
+          <meta
+            property="og:description"
+            content="Meu Portfólio pessoal de projetos."
+          />
+          <meta
+            property="og:image"
+            content="https://raw.githubusercontent.com/Glerme/portfolio/main/public/tela.png"
+          />
+
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta property="twitter:domain" content="glerme.dev" />
+          <meta property="twitter:url" content="https://glerme.dev/" />
+          <meta
+            name="twitter:title"
+            content="Guilherme Felipe | Dev. Júnior "
+          />
+          <meta
+            name="twitter:description"
+            content="Meu Portfólio pessoal de projetos."
+          />
+          <meta
+            name="twitter:image"
+            content="https://raw.githubusercontent.com/Glerme/portfolio/main/public/tela.png"
           />
         </Head>
         <body>
