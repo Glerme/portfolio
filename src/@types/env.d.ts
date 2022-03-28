@@ -6,9 +6,7 @@ declare namespace NodeJS {
     API_URL: string;
     PRISMIC_ACCESS_TOKEN: string;
     PRISMIC_ENDPOINT: string;
-    USER_ID_EMAILJS: string;
-    EMAIL_SERVICE: string;
-    TEMPLATE_EMAIL: string;
+    SENDGRID_API_KEY: string;
     BASE_URL: string;
     PORT: string;
   }

@@ -19,6 +19,7 @@ import { TextArea } from 'components/Forms/TextArea';
 import { CardRedesSociais } from 'components/Cards/CardRedesSociais';
 
 import { Container, Linhas, RedesSociais } from './styles';
+import { baseUrl } from 'utils/axios';
 
 export const Contato: React.FC = () => {
   const [fields, setFields] = useState({
@@ -30,19 +31,24 @@ export const Contato: React.FC = () => {
   const handleSubmit = async e => {
     e.preventDefault();
 
-    try {
-      if (fields.nome === '' || fields.email === '' || fields.message === '') {
-        toast.warn('Por Favor, preencha todos os campos.', {
-          theme: 'dark',
-        });
-        return;
-      }
+    if (fields.nome === '' || fields.email === '' || fields.message === '') {
+      toast.warn('Por Favor, preencha todos os campos.', {
+        theme: 'dark',
+      });
+      return;
+    }
 
-      const parsedData = {
-        from_name: fields.nome,
+    try {
+      await baseUrl.post('/api/contato', {
+        name: fields.nome,
         email: fields.email,
         message: fields.message,
-      };
+      });
+
+      toast.success('Email enviado com sucesso!', {
+        position: 'top-right',
+        theme: 'dark',
+      });
 
       setFields({
         email: '',
@@ -50,7 +56,7 @@ export const Contato: React.FC = () => {
         nome: '',
       });
     } catch (error) {
-      toast.error('Ocorreu um erro ao enviar!', {
+      toast.error('Ocorreu um erro ao enviar o email', {
         position: 'top-right',
         theme: 'dark',
       });
