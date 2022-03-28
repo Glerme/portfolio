@@ -15,8 +15,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         name: 'Guilherme Felipe ',
       },
       subject: `Contato - ${name}`,
-      text: message,
-      html: `<strong>${message}</strong>`,
+      html: `<strong>Email para responder: ${email}</strong> <br/> <strong> Mensagem: <p>${message}</p></strong>`,
     });
 
     return res.status(200).json('Email enviado com sucesso!');

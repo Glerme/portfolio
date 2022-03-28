@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { baseUrl } from 'utils/axios';
+
 import { FiGithub, FiMail } from 'react-icons/fi';
 import {
   FaLinkedinIn,
@@ -19,7 +21,6 @@ import { TextArea } from 'components/Forms/TextArea';
 import { CardRedesSociais } from 'components/Cards/CardRedesSociais';
 
 import { Container, Linhas, RedesSociais } from './styles';
-import { baseUrl } from 'utils/axios';
 
 export const Contato: React.FC = () => {
   const [fields, setFields] = useState({
