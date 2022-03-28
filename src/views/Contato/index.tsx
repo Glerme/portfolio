@@ -11,8 +11,6 @@ import {
   FaInstagram,
 } from 'react-icons/fa';
 
-import emailjs from '@emailjs/browser';
-
 import { PageContainer } from 'layouts/PageContainer';
 
 import { Input } from 'components/Forms/Input';
@@ -28,8 +26,6 @@ export const Contato: React.FC = () => {
     email: '',
     message: '',
   });
-
-  emailjs.init(process.env.USER_ID_EMAILJS);
 
   const handleSubmit = async e => {
     e.preventDefault();
@@ -47,20 +43,6 @@ export const Contato: React.FC = () => {
         email: fields.email,
         message: fields.message,
       };
-
-      emailjs
-        .sendForm(
-          process.env.EMAIL_SERVICE,
-          process.env.TEMPLATE_EMAIL,
-          'teste',
-          process.env.USER_ID_EMAILJS,
-        )
-        .then(() => {
-          toast.success('Enviado!', {
-            position: 'top-right',
-            theme: 'dark',
-          });
-        });
 
       setFields({
         email: '',
