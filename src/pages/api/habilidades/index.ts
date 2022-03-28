@@ -5,7 +5,7 @@ import Prismic from '@prismicio/client';
 import { getPrismicClient } from '../../../services/prismic';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method === 'GET') {
+  try {
     const prismic = getPrismicClient();
 
     const response = await prismic.query(
@@ -29,8 +29,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     }));
 
     return res.status(200).json(parsedCardHabilidades);
-  } else {
-    res.setHeader('Allow', 'POST');
-    res.status(405).end('Method Not Allowed');
+  } catch (error) {
+    res.status(500).json(error);
   }
 };

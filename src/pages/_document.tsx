@@ -40,12 +40,15 @@ export default class MyDocument extends Document {
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
-          <meta name="keywords" content="Guilherme Felipe | Dev. Júnior " />
+          <meta
+            name="keywords"
+            content="Guilherme Felipe, Guilherme, gui, glerme, Glerme, G felipe, porfolio, Portfolio Guilherme Felipe, Glerme dev, developer, web developer, react, nextjs, CSS3, sass"
+          />
           <meta name="title" content="Guilherme Felipe | Dev. Júnior " />
-          <meta name="theme-color" content="#000000" />
+          <meta name="theme-color" content="#0B0A0A" />
           <meta
             name="description"
-            content="Meu Portfólio pessoal de projetos."
+            content="Sou um desenvolvedor web profissional. Tenho experiência em desenvolvimento de sites e aplicativos com React.js e Next.js."
           />
 
           <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
@@ -68,17 +71,16 @@ export default class MyDocument extends Document {
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
 
+          <meta property="og:site_name" content="Portfolio Guilherme Felipe" />
+          <meta property="og:locale" content="pt_BR" />
           <meta property="og:url" content="https://glerme.dev/" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Guilherme Felipe | Dev. Júnior " />
           <meta
             property="og:description"
-            content="Meu Portfólio pessoal de projetos."
+            content="Sou um desenvolvedor web profissional. Tenho experiência em desenvolvimento de sites e aplicativos com React.js e Next.js."
           />
-          <meta
-            property="og:image"
-            content="https://raw.githubusercontent.com/Glerme/portfolio/main/public/tela.png"
-          />
+          <meta property="og:image" content="https://glerme.dev/foto.png" />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="twitter:domain" content="glerme.dev" />
@@ -89,12 +91,9 @@ export default class MyDocument extends Document {
           />
           <meta
             name="twitter:description"
-            content="Meu Portfólio pessoal de projetos."
+            content="Sou um desenvolvedor web profissional. Tenho experiência em desenvolvimento de sites e aplicativos com React.js e Next.js."
           />
-          <meta
-            name="twitter:image"
-            content="https://raw.githubusercontent.com/Glerme/portfolio/main/public/tela.png"
-          />
+          <meta name="twitter:image" content="https://glerme.dev/foto.png" />
         </Head>
         <body>
           <Main />
