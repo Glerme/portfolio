@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 import { breakpoints } from 'styles/breakpoints';
 
 const GlobalStyles = createGlobalStyle`
-
   :root{
     --white: #ffffff;
 
@@ -16,10 +15,8 @@ const GlobalStyles = createGlobalStyle`
     --green: #4EBA64;
     --green-light:#64EDAA;
 
-
     --blue: #7bccd9;
     --blue-dark: #008ba1;
-
   }
 
  * {
@@ -94,10 +91,6 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     height: 100%;
   }
-
-
-  
-
 `;
 
 export default GlobalStyles;
